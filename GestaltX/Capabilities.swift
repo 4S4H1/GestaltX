@@ -99,7 +99,25 @@ struct RegionPreset: Identifiable {
         .init(id: "JP", title: "Japan", code: "J", info: "J/A"),
         .init(id: "CN", title: "China (Mainland)", code: "CH", info: "CH/A"),
         .init(id: "TW", title: "Taiwan", code: "TA", info: "TA/A"),
-        .init(id: "UK", title: "United Kingdom", code: "B", info: "B/A")
+        .init(id: "UK", title: "United Kingdom", code: "B", info: "B/A"),
+        .init(id: "CA", title: "Canada", code: "C", info: "C/A")
+    ]
+}
+
+struct ModelPreset: Identifiable {
+    let id: String
+    let title: String
+    let value: String
+    static let all: [Self] = [
+        .init(id: "keep", title: "Keep Current", value: ""),
+        .init(id: "A3472", title: "A3472 — 18 Pro · United States", value: "A3472"),
+        .init(id: "A3713", title: "A3713 — 18 Pro · Canada / Japan", value: "A3713"),
+        .init(id: "A3714", title: "A3714 — 18 Pro · Other regions", value: "A3714"),
+        .init(id: "A3715", title: "A3715 — 18 Pro · China mainland", value: "A3715"),
+        .init(id: "A3473", title: "A3473 — 18 Pro Max · United States", value: "A3473"),
+        .init(id: "A3716", title: "A3716 — 18 Pro Max · Canada / Japan", value: "A3716"),
+        .init(id: "A3717", title: "A3717 — 18 Pro Max · Other regions", value: "A3717"),
+        .init(id: "A3718", title: "A3718 — 18 Pro Max · China mainland", value: "A3718")
     ]
 }
 

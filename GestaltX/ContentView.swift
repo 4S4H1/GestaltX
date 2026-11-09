@@ -297,6 +297,14 @@ struct CategoryView: View {
                 } footer: {
                     Text(L("Changing the sales-region suffix may cause verification tools to report a mismatch with factory information."))
                 }
+                Section {
+                    Picker(L("Model Number"), selection: $model.modelID) {
+                        ForEach(ModelPreset.all) { Text(L($0.title)).tag($0.id) }
+                    }
+                    if model.modelID != "keep" { Text(L("A device restart may be required after changing the model number.")).font(.caption).foregroundStyle(.secondary) }
+                } footer: {
+                    Text(L("Listed values apply to iPhone 18 Pro and iPhone 18 Pro Max only. Choosing a model number that does not match your hardware can make verification tools report a mismatch."))
+                }
             }
             Section {
                 ForEach(Capability.all.filter { $0.category == category }) { capability in

@@ -29,6 +29,7 @@ final class GestaltManager: ObservableObject {
     @Published var choices: [String: PresetChoice] = [:]
     @Published var regionID = "keep"
     @Published var regionCodeID = "keep"
+    @Published var modelID = "keep"
     @Published var changesName = false
     @Published var modelName = ""
     @Published var subtype = 0
@@ -106,6 +107,7 @@ final class GestaltManager: ObservableObject {
         }
         doc.applyRegion(salesRegion: RegionPreset.all.first { $0.id == regionID },
                         regionCode: RegionPreset.all.first { $0.id == regionCodeID })
+        doc.applyModel(ModelPreset.all.first { $0.id == modelID })
         return doc
     }
 
@@ -117,7 +119,7 @@ final class GestaltManager: ObservableObject {
     private func failed(_ error: Error) { message = error.localizedDescription; log(error.localizedDescription) }
     private func accept(_ loaded: DocumentSnapshot) {
         snapshot = loaded; working = loaded.document
-        choices = [:]; regionID = "keep"; regionCodeID = "keep"; changesName = false; subtype = 0
+        choices = [:]; regionID = "keep"; regionCodeID = "keep"; modelID = "keep"; changesName = false; subtype = 0
         cacheOptionChoice = .keep
         modelName = loaded.document.artwork["ArtworkDeviceProductDescription"] as? String ?? ""
     }
