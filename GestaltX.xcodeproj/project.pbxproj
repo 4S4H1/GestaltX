@@ -225,6 +225,7 @@
 				vi,
 				ru,
 				fa,
+				ko,
 				Base,
 			);
 			mainGroup = 3657C2D0303730E800908AE2;
