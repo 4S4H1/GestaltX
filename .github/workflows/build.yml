@@ -1,0 +1,59 @@
+name: Build IPA
+
+# Builds the IPA for a release and attaches it to that release. The IPA is
+# ad-hoc signed with the entitlements of the app and its share extension, so
+# AltStore and SideStore can register the App Group when they re-sign it.
+#
+# Runs when a release is published, or manually for an existing tag. An asset
+# with the same name on the release is replaced.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to build
+        type: string
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-ipa-${{ github.event.release.tag_name || inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: xcode-27
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+    steps:
+      - name: Checkout tag
+        uses: actions/checkout@v7
+        with:
+          ref: refs/tags/${{ env.TAG }}
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Use the current build script
+        # Tags made before this workflow existed have no build script
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git fetch --depth=1 origin "$DEFAULT_BRANCH"
+          git checkout FETCH_HEAD -- .github/scripts/build-ipa.sh
+
+      - name: Build IPA
+        id: build
+        run: .github/scripts/build-ipa.sh "$RUNNER_TEMP/ipa"
+
+      - name: Upload to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IPA: ${{ steps.build.outputs.ipa }}
+        run: gh release upload "$TAG" "$IPA" --clobber
