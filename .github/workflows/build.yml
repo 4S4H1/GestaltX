@@ -10,6 +10,9 @@ name: Build IPA
 on:
   release:
     types: [published]
+  push:
+    tags:
+      - "v*"
   workflow_dispatch:
     inputs:
       tag:
@@ -21,14 +24,14 @@ permissions:
   contents: write
 
 concurrency:
-  group: build-ipa-${{ github.event.release.tag_name || inputs.tag }}
+  group: build-ipa-${{ github.event.release.tag_name || inputs.tag || github.ref_name }}
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: xcode-27
     env:
-      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+      TAG: ${{ github.event.release.tag_name || inputs.tag || github.ref_name }}
     steps:
       - name: Checkout tag
         uses: actions/checkout@v7
