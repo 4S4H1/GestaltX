@@ -115,6 +115,14 @@ struct GestaltDocument: @unchecked Sendable {
         root["CacheData"] = data
     }
 
+    mutating func setWAPI(_ enabled: Bool, using resolvedLayout: MobileGestaltCacheLayout? = nil) throws {
+        let layout = try resolvedLayout ?? MobileGestaltCacheLayout.resolve(in: self)
+        _ = try DeviceCacheOptions.wapi(in: self, using: layout)
+        guard let offset = layout.wapiOffset, var data = root["CacheData"] as? Data else { return }
+        data[offset] = enabled ? 1 : 0
+        root["CacheData"] = data
+    }
+
     mutating func preservePendingCacheData(_ pending: Self, comparedTo original: Self) {
         // Restoring an unrelated CacheExtra preset must retain staged cache edits.
         // The complete edit is validated again by GestaltFileStore before writing.
@@ -202,7 +210,13 @@ struct DocumentSnapshot: @unchecked Sendable {
     let name: String
     var originals: [String: OriginalField] = [:]
     var cachedOptionsOriginal: CachedOptionsOriginal?
+    var wapiOriginal: WAPIOriginal?
     var ownershipVerified = false
+
+    func originalWAPI() throws -> Bool {
+        if let wapiOriginal { return try wapiOriginal.value(in: document) }
+        return try DeviceCacheOptions.wapi(in: document)
+    }
 
     func originalCachedOptionFlags() throws -> CachedOptionFlags {
         if let cachedOptionsOriginal { return try cachedOptionsOriginal.flags(in: document) }
@@ -216,7 +230,10 @@ struct DocumentSnapshot: @unchecked Sendable {
            let after = try? DeviceCacheOptions.flags(in: edited), before.flags != after {
             audio = before
         }
-        return OriginalValues(fields: recordingChanges(to: edited), cachedOptions: audio)
+        var wapi = wapiOriginal
+        if wapi == nil, let before = try? WAPIOriginal(document: document),
+           let after = try? DeviceCacheOptions.wapi(in: edited), before.enabled != after { wapi = before }
+        return OriginalValues(fields: recordingChanges(to: edited), cachedOptions: audio, wapi: wapi)
     }
 
     func originalValue(for key: String) -> Any? {
@@ -255,6 +272,7 @@ struct DocumentSnapshot: @unchecked Sendable {
 struct OriginalValues {
     var fields: [String: OriginalField] = [:]
     var cachedOptions: CachedOptionsOriginal?
+    var wapi: WAPIOriginal?
 }
 
 struct BackupRecord: Identifiable, Codable, Sendable {
@@ -306,12 +324,13 @@ actor GestaltFileStore {
                 if let audio = originals.cachedOptions, let flags = try? audio.flags(in: baseline) {
                     try baseline.setCacheOptions(flags)
                 }
-                let hasOriginals = !originals.fields.isEmpty || originals.cachedOptions != nil
+                if let wapi = originals.wapi, let value = try? wapi.value(in: baseline) { try baseline.setWAPI(value) }
+                let hasOriginals = !originals.fields.isEmpty || originals.cachedOptions != nil || originals.wapi != nil
                 let initialData = hasOriginals ? try baseline.encoded() : data
                 try saveBackup(initialData, source: .device, reason: hasOriginals ? "Original values snapshot" : "Initial backup")
             }
             return DocumentSnapshot(data: data, document: document, source: .device, name: "MobileGestalt",
-                                    originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions)
+                                    originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions, wapiOriginal: originals.wapi)
         }
     }
 
@@ -343,7 +362,7 @@ actor GestaltFileStore {
     private func loadOriginals(for document: GestaltDocument) throws -> OriginalValues {
         guard FileManager.default.fileExists(atPath: originalsURL.path) else {
             let recovered = try recoverOriginals(from: document)
-            if !recovered.fields.isEmpty || recovered.cachedOptions != nil {
+            if !recovered.fields.isEmpty || recovered.cachedOptions != nil || recovered.wapi != nil {
                 try saveOriginals(recovered, for: document)
             }
             return recovered
@@ -378,8 +397,18 @@ actor GestaltFileStore {
         // without replacing their already-recorded CacheExtra originals.
         let recoveredAudio = audio == nil ? try recoverOriginals(from: document).cachedOptions : nil
         if let recoveredAudio { audio = recoveredAudio }
-        let state = OriginalValues(fields: originals, cachedOptions: audio)
-        if recoveredAudio != nil { try saveOriginals(state, for: document) }
+        var wapi: WAPIOriginal?
+        if let entry = plist["wapi"] {
+            guard let bytes = entry as? Data,
+                  let decoded = try? PropertyListDecoder().decode(WAPIOriginal.self, from: bytes) else {
+                throw GestaltFailure("Original values could not be read. No system changes were made.")
+            }
+            wapi = decoded
+        }
+        let recoveredWAPI = wapi == nil ? try recoverOriginals(from: document).wapi : nil
+        if let recoveredWAPI { wapi = recoveredWAPI }
+        let state = OriginalValues(fields: originals, cachedOptions: audio, wapi: wapi)
+        if recoveredAudio != nil || recoveredWAPI != nil { try saveOriginals(state, for: document) }
         return state
     }
 
@@ -396,17 +425,17 @@ actor GestaltFileStore {
             guard document.matchesIdentity(current) else { continue }
             if let previous {
                 originals = DocumentSnapshot(data: Data(), document: previous, source: .device, name: "",
-                                             originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions)
+                                             originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions, wapiOriginal: originals.wapi)
                     .recordingOriginals(to: document)
             }
             previous = document
         }
         if let previous {
             originals = DocumentSnapshot(data: Data(), document: previous, source: .device, name: "",
-                                         originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions)
+                                         originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions, wapiOriginal: originals.wapi)
                 .recordingOriginals(to: current)
         }
-        if !originals.fields.isEmpty || originals.cachedOptions != nil {
+        if !originals.fields.isEmpty || originals.cachedOptions != nil || originals.wapi != nil {
             eventSink("Original values: recovered from device backups")
         }
         return originals
@@ -417,6 +446,7 @@ actor GestaltFileStore {
                                    "values": originals.fields.mapValues(\.plist)]
         do {
             if let audio = originals.cachedOptions { plist["faceTimeAudio"] = try PropertyListEncoder().encode(audio) }
+            if let wapi = originals.wapi { plist["wapi"] = try PropertyListEncoder().encode(wapi) }
             let data = try PropertyListSerialization.data(fromPropertyList: plist, format: .binary, options: 0)
             try data.write(to: originalsURL, options: .atomic)
             guard try Data(contentsOf: originalsURL) == data else {
@@ -486,7 +516,7 @@ actor GestaltFileStore {
             var originals = expected.recordingOriginals(to: edited)
             for key in originallyAbsentKeys { originals.fields[key] = OriginalField(value: nil) }
             return DocumentSnapshot(data: output, document: edited, source: .local, name: expected.name,
-                                    originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions, ownershipVerified: expected.ownershipVerified)
+                                    originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions, wapiOriginal: originals.wapi, ownershipVerified: expected.ownershipVerified)
         }
         if let record {
             guard record.source == .device, record.deviceID == deviceID, edited.matchesIdentity(expected.document) else {
@@ -501,6 +531,7 @@ actor GestaltFileStore {
             let saved = try loadOriginals(for: expected.document)
             baseline.originals.merge(saved.fields) { _, saved in saved }
             if let audio = saved.cachedOptions { baseline.cachedOptionsOriginal = audio }
+            if let wapi = saved.wapi { baseline.wapiOriginal = wapi }
             var originals = baseline.recordingOriginals(to: edited)
             // Explicitly removing a user-confirmed added field also corrects
             // old zero/one residues whose earlier origin was not recorded.
@@ -518,7 +549,7 @@ actor GestaltFileStore {
                 let readback = try Data(contentsOf: deviceURL)
                 guard try edited.matches(GestaltDocument(data: readback)) else { throw GestaltFailure("The write did not match the readback.") }
                 eventSink("Readback: verified")
-                return DocumentSnapshot(data: readback, document: edited, source: .device, name: expected.name, originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions)
+                return DocumentSnapshot(data: readback, document: edited, source: .device, name: expected.name, originals: originals.fields, cachedOptionsOriginal: originals.cachedOptions, wapiOriginal: originals.wapi)
             } catch {
                 eventSink("Write/readback failed: " + error.localizedDescription)
                 eventSink("Recovery: restoring previous bytes")

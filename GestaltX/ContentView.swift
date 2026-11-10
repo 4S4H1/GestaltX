@@ -345,7 +345,10 @@ struct CategoryView: View {
                     }
                     }
                 }
-                if category == .device && model.additionalOptionsUnlocked { AdditionalOptionsRow() }
+                if category == .device && model.additionalOptionsUnlocked {
+                    AdditionalOptionsRow()
+                    WAPIPresetRow()
+                }
             } header: {
                 Text(L("Presets"))
             }
@@ -399,6 +402,25 @@ struct AdditionalOptionsRow: View {
                 LabeledContent(L("Additional Options")) { Text(L("Unsupported")).foregroundStyle(.secondary) }
                 Text(error.localizedDescription).font(.caption).foregroundStyle(.secondary)
             }
+        }
+    }
+}
+
+struct WAPIPresetRow: View {
+    @EnvironmentObject private var model: GestaltManager
+    private var supported: Bool {
+        guard let document = model.preview else { return false }
+        return (try? DeviceCacheOptions.wapi(in: document)) != nil
+    }
+    var body: some View {
+        if supported {
+            Picker("WAPI", selection: Binding(get: { model.wapiChoice }, set: { model.stageWAPI($0) })) {
+                ForEach(WAPIChoice.allCases) { choice in Text(choice.title).tag(choice) }
+            }
+            .pickerStyle(.menu)
+            .accessibilityIdentifier("wapi-choice")
+        } else {
+            LabeledContent("WAPI") { Text(L("Unsupported")).foregroundStyle(.secondary) }
         }
     }
 }
