@@ -21,6 +21,12 @@
             "value": "سپاس ویژه"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "감사의 글"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -65,6 +71,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پشتیبانی می‌شود"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지원됨"
           }
         },
         "ru": {
@@ -113,6 +125,12 @@
             "value": "پشتیبانی نمی‌شود"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지원되지 않음"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -157,6 +175,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "خوش آمدید"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "환영합니다"
           }
         },
         "ru": {
@@ -205,6 +229,12 @@
             "value": "به GestaltX خوش آمدید"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GestaltX에 오신 것을 환영합니다"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -249,6 +279,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ویرایشگر MobileGestalt"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MobileGestalt 편집기"
           }
         },
         "ru": {
@@ -297,6 +333,12 @@
             "value": "سلب مسئولیت"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "면책 조항"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -341,6 +383,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "متوجه شدم، ادامه"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이해했습니다, 계속하기"
           }
         },
         "ru": {
@@ -389,6 +437,12 @@
             "value": "دسترسی به سیستم و قابلیت‌های در دسترس به نسخهٔ سیستم‌عامل، دستگاه و امضای برنامه بستگی دارد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 접근 권한 및 사용 가능한 기능은 OS 버전, 기기 및 서명 상태에 따라 다릅니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -433,6 +487,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "تغییر MobileGestalt ممکن است باعث ناپایداری سیستم، اختلال قابلیت‌ها یا گیر کردن در چرخهٔ راه‌اندازی شود. ممکن است بازیابی دستگاه لازم باشد."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MobileGestalt를 변경하면 시스템 불안정, 기능 누락 또는 무한 부팅이 발생할 수 있습니다. 기기 복구를 위해 초기화가 필요할 수 있습니다."
           }
         },
         "ru": {
@@ -481,6 +541,12 @@
             "value": "پیش از هر تغییری از دستگاه نسخهٔ پشتیبان بگیرید و یک کپی از فایل plist اصلی صادر کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경하기 전에 기기를 백업하고 원본 plist 복사본을 내보내십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -525,6 +591,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پرچم‌های قابلیت، سخت‌افزاری را که دستگاه ندارد اضافه نمی‌کنند. برخی تغییرات به راه‌اندازی مجدد دستگاه نیاز دارند."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기능 플래그로 없는 하드웨어를 추가할 수는 없습니다. 일부 변경 사항은 기기 재시동이 필요합니다."
           }
         },
         "ru": {
@@ -573,6 +645,12 @@
             "value": "فقط روی دستگاه‌های خودتان یا دستگاه‌هایی که مجاز به مدیریت آن‌ها هستید استفاده کنید. مسئولیت تغییراتی که اعمال می‌کنید با شماست."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "본인 소유이거나 관리를 위임받은 기기에서만 사용하십시오. 적용한 변경 사항에 대한 모든 책임은 사용자 본인에게 있습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -617,6 +695,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "این نرم‌افزار بدون ضمانت ارائه می‌شود. پیش از استفاده، مجوز همراه آن را بخوانید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 소프트웨어는 어떠한 보증도 없이 제공됩니다. 사용하기 전에 포함된 라이선스를 읽어보십시오."
           }
         },
         "ru": {
@@ -665,6 +749,12 @@
             "value": "مخزن GitHub"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub 저장소"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -709,6 +799,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "سپاسگزاری و مجوزها"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "크레딧 및 라이선스"
           }
         },
         "ru": {
@@ -757,6 +853,12 @@
             "value": "مجوز"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "라이선스"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -801,6 +903,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "روش ری‌اسپرینگ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "리스프링 방식"
           }
         },
         "ru": {
@@ -849,6 +957,12 @@
             "value": "خواندن دوباره"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다시 읽기"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -893,6 +1007,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ممکن است راه‌اندازی مجدد دستگاه لازم باشد."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 재시동이 필요할 수 있습니다."
           }
         },
         "ru": {
@@ -941,6 +1061,12 @@
             "value": "پس از تغییر منطقه، دستگاه را دوباره راه‌اندازی کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지역을 변경한 후 기기를 재시동하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -985,6 +1111,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "برخی تغییرات به راه‌اندازی مجدد دستگاه نیاز دارند."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일부 변경 사항은 기기 재시동이 필요합니다."
           }
         },
         "ru": {
@@ -1033,6 +1165,12 @@
             "value": "راه‌اندازی مجدد لازم است. Apple Intelligence به دستگاه و منطقه نیز بستگی دارد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "재시동이 필요합니다. Apple Intelligence는 기기 및 지역에 따라서도 달라집니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1077,6 +1215,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "دستگاه را دوباره راه‌اندازی کنید و تنظیمات را باز کنید. پشتیبانی سخت‌افزاری Apple Pencil همچنان لازم است."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기를 재시동한 후 설정을 다시 여십시오. Apple Pencil 하드웨어 지원이 여전히 필요합니다."
           }
         },
         "ru": {
@@ -1125,6 +1269,12 @@
             "value": "ابتدا ری‌اسپرینگ کنید. اگر تغییر دیده نشد، دستگاه را دوباره راه‌اندازی کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "먼저 리스프링하십시오. 변경 사항이 나타나지 않으면 기기를 재시동하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1169,6 +1319,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نوشتن تأیید شد. برخی قابلیت‌ها به راه‌اندازی مجدد دستگاه نیاز دارند."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쓰기가 검증되었습니다. 일부 기능은 기기 재시동이 필요합니다."
           }
         },
         "ru": {
@@ -1217,6 +1373,12 @@
             "value": "مدل"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모델"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1261,6 +1423,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "وضعیت"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "상태"
           }
         },
         "ru": {
@@ -1309,6 +1477,12 @@
             "value": "متصل"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결됨"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1353,6 +1527,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "فایل محلی"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로컬 파일"
           }
         },
         "ru": {
@@ -1401,6 +1581,12 @@
             "value": "خوانده نشده"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로드되지 않음"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1445,6 +1631,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "در حال خواندن…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "읽는 중…"
           }
         },
         "ru": {
@@ -1493,6 +1685,12 @@
             "value": "خواندن MobileGestalt"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MobileGestalt 읽기"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1537,6 +1735,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "وارد کردن plist"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plist 가져오기"
           }
         },
         "ru": {
@@ -1585,6 +1789,12 @@
             "value": "عملیات"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "동작"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1629,6 +1839,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "اعمال تغییرات"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경 사항 적용"
           }
         },
         "ru": {
@@ -1677,6 +1893,12 @@
             "value": "ری‌اسپرینگ لازم است"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "리스프링 필요"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1721,6 +1943,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "گزارش"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그"
           }
         },
         "ru": {
@@ -1769,6 +1997,12 @@
             "value": "تنظیمات آزمایشی است. پیش از اعمال، نسخهٔ پشتیبان بگیرید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실험적 설정입니다. 적용하기 전에 백업하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1813,6 +2047,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نسخهٔ پشتیبانی وجود ندارد"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "백업 없음"
           }
         },
         "ru": {
@@ -1861,6 +2101,12 @@
             "value": "پیش از هر بار نوشتن، نسخهٔ پشتیبان ساخته می‌شود."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쓰기 작업 전에 매번 백업이 생성됩니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1905,6 +2151,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "با استفاده از NeoSpring برای راه‌اندازی مجدد SpringBoard تلاش می‌شود."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NeoSpring을 사용하여 SpringBoard 재시작을 시도합니다."
           }
         },
         "ru": {
@@ -1953,6 +2205,12 @@
             "value": "پروژه‌های GitHub"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub 프로젝트"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1994,6 +2252,12 @@
           }
         },
         "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GNU GPL v3"
+          }
+        },
+        "ko": {
           "stringUnit": {
             "state": "translated",
             "value": "GNU GPL v3"
@@ -2045,6 +2309,12 @@
             "value": "تاریخ"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "날짜"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2089,6 +2359,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "تاریخی با قالب ISO 8601 وارد کنید؛ برای نمونه 2026-11-09T12:00:00Z."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2026-11-09T12:00:00Z와 같은 ISO 8601 형식의 날짜를 입력하십시오."
           }
         },
         "ru": {
@@ -2137,6 +2413,12 @@
             "value": "ابزارها"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도구"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2181,6 +2463,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پشتیبان‌ها"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "백업"
           }
         },
         "ru": {
@@ -2229,6 +2517,12 @@
             "value": "درباره"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "정보"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2270,6 +2564,12 @@
           }
         },
         "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GestaltX"
+          }
+        },
+        "ko": {
           "stringUnit": {
             "state": "translated",
             "value": "GestaltX"
@@ -2321,6 +2621,12 @@
             "value": "باشه"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확인"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2365,6 +2671,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "لغو"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취소"
           }
         },
         "ru": {
@@ -2413,6 +2725,12 @@
             "value": "اعمال"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "적용"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2457,6 +2775,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "انجام شد"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "완료"
           }
         },
         "ru": {
@@ -2505,6 +2829,12 @@
             "value": "بستن"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "닫기"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2549,6 +2879,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "بیشتر"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더 보기"
           }
         },
         "ru": {
@@ -2597,6 +2933,12 @@
             "value": "آماده"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "준비 완료"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2641,6 +2983,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "فعال"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "활성화"
           }
         },
         "ru": {
@@ -2689,6 +3037,12 @@
             "value": "غیرفعال"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "비활성화"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2733,6 +3087,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "غیرفعال (بازگردانی مقادیر اصلی)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "비활성화 (원본으로 복원)"
           }
         },
         "ru": {
@@ -2781,6 +3141,12 @@
             "value": "حذف فیلدهای افزوده‌شده"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가된 필드 제거"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2825,6 +3191,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "غیرفعال‌سازی مقادیر اصلی ثبت‌شده را بازمی‌گرداند. فقط فیلدهایی را حذف کنید که مطمئن هستید از ابتدا وجود نداشته‌اند."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "비활성화하면 기록된 원본 값이 복원됩니다. 원래 존재하지 않았던 것으로 확인된 필드에만 '추가된 필드 제거'를 사용하십시오."
           }
         },
         "ru": {
@@ -2873,6 +3245,12 @@
             "value": "مقادیر اصلی خوانده نشدند. فایل‌های سیستم تغییر نکرده‌اند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본 값을 읽을 수 없습니다. 시스템이 변경되지 않았습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2917,6 +3295,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "سابقهٔ مقادیر اصلی متعلق به دستگاه دیگری است."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본 값 기록이 다른 기기의 것입니다."
           }
         },
         "ru": {
@@ -2965,6 +3349,12 @@
             "value": "ذخیره و تأیید مقادیر اصلی ممکن نشد. نوشتن فایل سیستم آغاز نشده است."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본 값을 저장하고 검증할 수 없습니다. 시스템 쓰기 작업이 시작되지 않았습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3009,6 +3399,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پیش از اعمال، فیلدهای افزوده‌شدهٔ انتخابی باید حذف شوند."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "적용하기 전에 선택한 추가 필드를 제거해야 합니다."
           }
         },
         "ru": {
@@ -3057,6 +3453,12 @@
             "value": "بدون تغییر"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 상태 유지"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3101,6 +3503,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نمایشگر"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이"
           }
         },
         "ru": {
@@ -3149,6 +3557,12 @@
             "value": "دستگاه"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3190,6 +3604,12 @@
           }
         },
         "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPad"
+          }
+        },
+        "ko": {
           "stringUnit": {
             "state": "translated",
             "value": "iPad"
@@ -3241,6 +3661,12 @@
             "value": "هوش"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인텔리전스"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3285,6 +3711,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پیشرفته"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "고급"
           }
         },
         "ru": {
@@ -3333,6 +3765,12 @@
             "value": "رشته"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "문자열 (String)"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3377,6 +3815,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "عدد صحیح"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "정수 (Integer)"
           }
         },
         "ru": {
@@ -3425,6 +3869,12 @@
             "value": "عدد اعشاری"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실수 (Real)"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3469,6 +3919,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "بولی"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "부울 (Boolean)"
           }
         },
         "ru": {
@@ -3517,6 +3973,12 @@
             "value": "داده"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데이터 (Data)"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3561,6 +4023,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "آرایه"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "배열 (Array)"
           }
         },
         "ru": {
@@ -3609,6 +4077,12 @@
             "value": "دیکشنری"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "딕셔너리 (Dictionary)"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3653,6 +4127,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "دستگاه را به دلخواه خود تنظیم کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기를 원하는 대로 맞춤 설정해 보세요."
           }
         },
         "ru": {
@@ -3701,6 +4181,12 @@
             "value": "قابلیت‌ها"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기능 플래그"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3745,6 +4231,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "آنچه را می‌خواهید تغییر دهید انتخاب کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경할 항목을 선택하십시오."
           }
         },
         "ru": {
@@ -3793,6 +4285,12 @@
             "value": "برای آغاز ویرایش، متصل شوید یا یک فایل plist باز کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "편집을 시작하려면 기기에 연결하거나 plist를 여십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3837,6 +4335,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "عملیات سریع"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "빠른 동작"
           }
         },
         "ru": {
@@ -3885,6 +4389,12 @@
             "value": "یک کپی نگه دارید و هر وقت آماده بودید بازخوانی کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사본을 보관하십시오. 준비되면 새로고침하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3929,6 +4439,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پشتیبان‌گیری"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "백업 생성"
           }
         },
         "ru": {
@@ -3977,6 +4493,12 @@
             "value": "صدور plist"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plist 내보내기"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4021,6 +4543,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ری‌اسپرینگ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "리스프링"
           }
         },
         "ru": {
@@ -4069,6 +4597,12 @@
             "value": "تغییرات تأیید شدند. هر وقت آماده بودید ری‌اسپرینگ کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경 사항이 검증되었습니다. 준비되면 리스프링하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4113,6 +4647,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "گزارش نشست"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세션 로그"
           }
         },
         "ru": {
@@ -4161,6 +4701,12 @@
             "value": "باز کردن plist…"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plist 열기…"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4205,6 +4751,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "اتصال به دستگاه"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기에 연결"
           }
         },
         "ru": {
@@ -4253,6 +4805,12 @@
             "value": "تغییرات در انتظار"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "대기 중인 변경 사항"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4297,6 +4855,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld فیلد تغییر کرده است"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld개 필드 변경됨"
           }
         },
         "ru": {
@@ -4345,6 +4909,12 @@
             "value": "بازبینی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검토"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4389,6 +4959,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "روی دستگاه"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 내부"
           }
         },
         "ru": {
@@ -4437,6 +5013,12 @@
             "value": "سند محلی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로컬 문서"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4481,6 +5063,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "دستگاه شما"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자의 기기"
           }
         },
         "ru": {
@@ -4529,6 +5117,12 @@
             "value": "متصل نیست"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결되지 않음"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4573,6 +5167,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld فیلد"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld개 필드"
           }
         },
         "ru": {
@@ -4621,6 +5221,12 @@
             "value": "تصویر فعلی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실시간 스냅샷"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4665,6 +5271,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "حافظهٔ نهان سیستم را باز کنید یا با یک plist از برنامهٔ Files کار کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 캐시를 열거나 파일 앱의 plist로 작업하십시오."
           }
         },
         "ru": {
@@ -4713,6 +5325,12 @@
             "value": "در حال اتصال…"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결 중…"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4757,6 +5375,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "اتصال"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결"
           }
         },
         "ru": {
@@ -4805,6 +5429,12 @@
             "value": "باز کردن فایل"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "파일 열기"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4849,6 +5479,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "بازخوانی"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새로고침"
           }
         },
         "ru": {
@@ -4897,6 +5533,12 @@
             "value": "دسترسی به حافظهٔ نهان سیستم به سیستم‌عامل و امضا بستگی دارد. پروژهٔ اصلی دسترسی به SystemGroup را برای iOS 27 اعلام کرده است؛ در iOS 26 می‌توان با فایل‌های محلی کار کرد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 캐시 접근 권한은 OS 버전 및 서명에 따라 다릅니다. 원본 프로젝트에서는 iOS 27의 SystemGroup 접근을 지원하며, iOS 26에서는 로컬 파일을 사용할 수 있습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4941,6 +5583,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "چیدمان Dynamic Island"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dynamic Island 레이아웃"
           }
         },
         "ru": {
@@ -4989,6 +5637,12 @@
             "value": "چیدمان متفاوت ممکن است روی نوار وضعیت و صفحه‌کلید اثر بگذارد. نسخهٔ پشتیبان نگه دارید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "레이아웃을 변경하면 상태 막대 및 키보드에 영향을 줄 수 있습니다. 백업을 보관하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5033,6 +5687,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "هویت دستگاه"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 식별 정보"
           }
         },
         "ru": {
@@ -5081,6 +5741,12 @@
             "value": "تغییر نام مدل"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모델명 변경"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5125,6 +5791,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نام مدل"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모델명"
           }
         },
         "ru": {
@@ -5173,6 +5845,12 @@
             "value": "منطقهٔ فروش"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "판매 지역"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5217,6 +5895,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "کد منطقه"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지역 코드"
           }
         },
         "ru": {
@@ -5265,6 +5949,12 @@
             "value": "معمولاً تغییر کد منطقه کافی است. نیازی به تغییر منطقهٔ فروش نیست."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "대체로 지역 코드만 변경하면 충분합니다. 판매 지역을 변경할 필요는 없습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5309,6 +5999,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "* اگر قبلاً منطقهٔ فروش را تغییر داده‌اید، ابتدا منطقهٔ فروش اصلی دستگاه را بازگردانید و تغییر را اعمال کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "* 이전에 판매 지역을 변경한 경우, 기기의 원래 판매 지역으로 복원하고 먼저 적용하십시오."
           }
         },
         "ru": {
@@ -5357,6 +6053,12 @@
             "value": "تغییر پسوند منطقهٔ فروش ممکن است باعث شود ابزارهای بررسی، عدم تطابق با اطلاعات کارخانه را گزارش کنند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "판매 지역 접미사를 변경하면 기기 검증 도구에서 출고 시 정보와 불일치하는 것으로 표시될 수 있습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5401,6 +6103,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "تغییر پرچم منطقه، فعال شدن Apple Intelligence یا خدمات محدودشده به منطقه را تضمین نمی‌کند."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지역 플래그를 변경하더라도 Apple Intelligence 또는 지역 제한 서비스 활성화가 보장되지는 않습니다."
           }
         },
         "ru": {
@@ -5449,6 +6157,12 @@
             "value": "آزمایشی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실험적 기능"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5493,6 +6207,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پیش‌تنظیم‌ها"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프리셋"
           }
         },
         "ru": {
@@ -5541,6 +6261,12 @@
             "value": "گزینه‌ها تا زمان بازبینی و اعمال، موقتاً ذخیره می‌شوند. پرچم‌های قابلیت، سخت‌افزاری را که دستگاه ندارد اضافه نمی‌کنند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선택한 항목은 검토 후 적용할 때까지 임시 저장됩니다. 기능 플래그로 없는 하드웨어를 추가할 수는 없습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5585,6 +6311,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "تبدیل CacheData به حالت iPadOS برای این نسخه‌های سیستم‌عامل فعال نیست."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 OS 빌드에서는 iPadOS CacheData 변환이 활성화되지 않습니다."
           }
         },
         "ru": {
@@ -5633,6 +6365,12 @@
             "value": "وصله‌های تأییدنشده با جابه‌جایی بایت کنار گذاشته شده‌اند. از پیش‌تنظیم‌های پشتیبانی‌شده استفاده کنید یا فیلدها را جداگانه بررسی کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검증되지 않은 바이트 오프셋 패치는 제외되었습니다. 지원되는 프리셋을 사용하거나 개별 필드를 직접 확인하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5677,6 +6415,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "بازبینی تغییرات"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경 사항 검토"
           }
         },
         "ru": {
@@ -5725,6 +6469,12 @@
             "value": "سندی باز نشده است"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "열린 문서 없음"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5769,6 +6519,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "برای دیدن فیلدها، در بخش ابزارها به دستگاه متصل شوید یا یک plist باز کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "필드를 탐색하려면 도구에서 기기에 연결하거나 plist를 여십시오."
           }
         },
         "ru": {
@@ -5817,6 +6573,12 @@
             "value": "%lld بایت"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld바이트"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5861,6 +6623,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "فیلدهای خام سیستم. پیش از ذخیره، کلید و نوع آن را بررسی کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원시 시스템 필드입니다. 저장하기 전에 키와 타입을 검토하십시오."
           }
         },
         "ru": {
@@ -5909,6 +6677,12 @@
             "value": "جست‌وجوی کلیدها و مقدارها"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키 및 값 검색"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5953,6 +6727,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "افزودن فیلد"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "필드 추가"
           }
         },
         "ru": {
@@ -6001,6 +6781,12 @@
             "value": "حذف"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "삭제"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6045,6 +6831,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "این فیلد حذف شود؟"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 필드를 삭제하시겠습니까?"
           }
         },
         "ru": {
@@ -6093,6 +6885,12 @@
             "value": "حذف موقتاً ثبت می‌شود. فایل دستگاه فقط پس از اعمال تغییر می‌کند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "삭제 항목이 임시 저장되었습니다. 기기 파일은 적용한 후에만 변경됩니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6137,6 +6935,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "کلید"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키"
           }
         },
         "ru": {
@@ -6185,6 +6989,12 @@
             "value": "کلید فیلد"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "필드 키"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6229,6 +7039,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "مقدار"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "값"
           }
         },
         "ru": {
@@ -6277,6 +7093,12 @@
             "value": "نوع"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "타입"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6321,6 +7143,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "از یک قطعهٔ XML plist شامل برچسب‌های array یا dict استفاده کنید. داده‌های تودرتو و نوع عددها حفظ می‌شوند."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "array 또는 dict 태그를 포함한 XML plist 조각을 사용하십시오. 중첩된 데이터 및 숫자 타입이 보존됩니다."
           }
         },
         "ru": {
@@ -6369,6 +7197,12 @@
             "value": "مقدارهای داده با Base64 کدگذاری می‌شوند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data 값은 Base64 인코딩을 사용합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6413,6 +7247,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ویرایش فیلد"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "필드 편집"
           }
         },
         "ru": {
@@ -6461,6 +7301,12 @@
             "value": "ثبت موقت"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "임시 저장"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6505,6 +7351,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نوشتن روی این دستگاه"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 기기에 쓰기"
           }
         },
         "ru": {
@@ -6553,6 +7405,12 @@
             "value": "ذخیرهٔ سند محلی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로컬 문서 저장"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6597,6 +7455,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پیش از نوشتن، نسخهٔ پشتیبان ساخته می‌شود. نتیجه دوباره خوانده و مقایسه می‌شود."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쓰기 전에 백업이 생성됩니다. 기록된 결과는 다시 읽어 비교 검증됩니다."
           }
         },
         "ru": {
@@ -6645,6 +7509,12 @@
             "value": "این کار فایل بازشده در GestaltX را ویرایش می‌کند. برای نگه‌داشتن کپی، آن را صادر کنید؛ فایل سیستم تغییر نمی‌کند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GestaltX에 열린 파일이 수정됩니다. 사본을 보관하려면 내보내십시오. 시스템 파일은 변경되지 않습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6689,6 +7559,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "اعمال روی دستگاه"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기에 적용"
           }
         },
         "ru": {
@@ -6737,6 +7613,12 @@
             "value": "ذخیرهٔ تغییرات محلی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로컬 변경 사항 저장"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6781,6 +7663,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "کنار گذاشتن تغییرات"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경 사항 취소"
           }
         },
         "ru": {
@@ -6829,6 +7717,12 @@
             "value": "این تغییرات اعمال شوند؟"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 변경 사항들을 적용하시겠습니까?"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6873,6 +7767,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "مقدارهای نادرست سیستم ممکن است بر عملکرد دستگاه اثر بگذارند. نسخهٔ پشتیبان تأییدشده نگه داشته می‌شود. ری‌اسپرینگ به‌طور خودکار اجرا نمی‌شود."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잘못된 시스템 값은 기기 동작에 영향을 줄 수 있습니다. 검증된 백업이 유지됩니다. 리스프링은 자동으로 실행되지 않습니다."
           }
         },
         "ru": {
@@ -6921,6 +7821,12 @@
             "value": "پیش از ذخیرهٔ ویرایش‌ها، از سند محلی فعلی نسخهٔ پشتیبان گرفته می‌شود."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수정 사항을 저장하기 전에 현재 로컬 문서가 백업됩니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6965,6 +7871,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پیش از تغییر"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경 전"
           }
         },
         "ru": {
@@ -7013,6 +7925,12 @@
             "value": "پس از تغییر"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경 후"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7057,6 +7975,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "وجود ندارد"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "존재하지 않음"
           }
         },
         "ru": {
@@ -7105,6 +8029,12 @@
             "value": "ساخت نسخهٔ پشتیبان"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "백업 생성"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7149,6 +8079,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نسخه‌های پشتیبان دستگاه به همین نصب متصل می‌مانند. فایل‌های واردشده جدا نگه داشته می‌شوند."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 백업은 현재 설치된 앱에 연결되어 유지됩니다. 가져온 파일은 별도로 관리됩니다."
           }
         },
         "ru": {
@@ -7197,6 +8133,12 @@
             "value": "پشتوانهٔ شما"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "안전망"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7241,6 +8183,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پیش از هر بار نوشتن، نسخهٔ پشتیبان در اینجا ظاهر می‌شود. هر زمان بخواهید می‌توانید نسخهٔ پشتیبان هم بسازید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쓰기 작업 전에 생성된 백업이 여기에 표시됩니다. 언제든지 직접 백업을 생성할 수도 있습니다."
           }
         },
         "ru": {
@@ -7289,6 +8237,12 @@
             "value": "پشتیبان دستگاه"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 백업"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7333,6 +8287,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پشتیبان فایل محلی"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로컬 파일 백업"
           }
         },
         "ru": {
@@ -7381,6 +8341,12 @@
             "value": "باز کردن"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "열기"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7425,6 +8391,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "صدور"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내보내기"
           }
         },
         "ru": {
@@ -7473,6 +8445,12 @@
             "value": "بازیابی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "복원"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7517,6 +8495,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پشتیبان اولیه"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "초기 백업"
           }
         },
         "ru": {
@@ -7565,6 +8549,12 @@
             "value": "نسخه‌ای از مقادیر اصلی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본 값 스냅샷"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7609,6 +8599,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "بازگردانی"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "되돌리기"
           }
         },
         "ru": {
@@ -7657,6 +8653,12 @@
             "value": "مقادیر اصلی بازگردانده شدند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본 값이 복원되었습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7701,6 +8703,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "این نسخهٔ پشتیبان بازیابی شود؟"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 백업을 복원하시겠습니까?"
           }
         },
         "ru": {
@@ -7749,6 +8757,12 @@
             "value": "ابتدا از سند فعلی پشتیبان گرفته می‌شود. بازیابی روی دستگاه پس از نوشتن تأیید می‌شود."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 문서가 먼저 백업됩니다. 기기 복원은 쓰기 작업 후 검증됩니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7793,6 +8807,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "این نسخهٔ پشتیبان حذف شود؟"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 백업을 삭제하시겠습니까?"
           }
         },
         "ru": {
@@ -7841,6 +8861,12 @@
             "value": "این کار نسخهٔ پشتیبان محلی را برای همیشه حذف می‌کند. فایل دستگاه تغییر نمی‌کند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로컬 백업이 영구적으로 제거됩니다. 기기 파일은 변경되지 않습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7885,6 +8911,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "هنوز فعالیتی ثبت نشده است."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 활동 기록이 없습니다."
           }
         },
         "ru": {
@@ -7933,6 +8965,12 @@
             "value": "پاک کردن"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지우기"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7977,6 +9015,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "اکنون ری‌اسپرینگ شود؟"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 리스프링하시겠습니까?"
           }
         },
         "ru": {
@@ -8025,6 +9069,12 @@
             "value": "NeoSpring برای راه‌اندازی مجدد SpringBoard تلاش می‌کند. ابتدا کار خود را ذخیره کنید. ممکن است در همهٔ نسخه‌های سیستم‌عامل کار نکند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NeoSpring이 SpringBoard 재시작을 시도합니다. 먼저 작업 내용을 저장하십시오. 모든 OS 빌드에서 작동하지는 않을 수 있습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8069,6 +9119,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dynamic Island، نمایشگر همیشه‌روشن و Liquid Glass"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dynamic Island, 상시표시형 디스플레이 및 Liquid Glass"
           }
         },
         "ru": {
@@ -8117,6 +9173,12 @@
             "value": "شارژ، دکمه‌ها و هویت دستگاه"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "충전, 버튼 및 기기 식별 정보"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8161,6 +9223,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stage Manager و سازگاری برنامه‌ها"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스테이지 매니저 및 앱 호환성"
           }
         },
         "ru": {
@@ -8209,6 +9277,12 @@
             "value": "منطقه و قابلیت‌های مدل‌های مولد"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지역 및 생성형 모델 기능"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8255,6 +9329,12 @@
             "value": "قابلیت‌های داخلی و تنظیمات پژوهشی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내부 기능 및 연구용 설정"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8296,6 +9376,12 @@
           }
         },
         "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dynamic Island"
+          }
+        },
+        "ko": {
           "stringUnit": {
             "state": "translated",
             "value": "Dynamic Island"
@@ -8347,6 +9433,12 @@
             "value": "پرچم جایگزین قابلیت Dynamic Island را فعال کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "대체 Dynamic Island 기능을 활성화합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8391,6 +9483,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نمایشگر همیشه‌روشن"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "상시표시형 디스플레이"
           }
         },
         "ru": {
@@ -8439,6 +9537,12 @@
             "value": "رفتار نمایشگر به پنل بستگی دارد. ممکن است مصرف انرژی و خطر سوختگی تصویر افزایش یابد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이 동작은 패널에 따라 다릅니다. 전력 소모 및 번인 위험이 증가할 수 있습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8483,6 +9587,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "رنگ‌های نمایشگر همیشه‌روشن"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AOD 생동감"
           }
         },
         "ru": {
@@ -8531,6 +9641,12 @@
             "value": "قابلیت‌های رندر نمایشگر همیشه‌روشن را تنظیم کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AOD 렌더링 기능을 조정합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8575,6 +9691,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "رندر کم‌توان Liquid Glass"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liquid Glass 저전력 렌더링"
           }
         },
         "ru": {
@@ -8623,6 +9745,12 @@
             "value": "از قابلیت رندر با توان پردازشی کمتر در iOS 26 و بالاتر استفاده کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS 26 이상에서 저성능 렌더링 기능을 사용합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8667,6 +9795,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "صدای روشن و خاموش شدن"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전원 켬 및 끔 사운드"
           }
         },
         "ru": {
@@ -8715,6 +9849,12 @@
             "value": "قابلیت صدای روشن و خاموش شدن دستگاه را نمایش دهید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전원 켬 및 끔 사운드 기능을 노출합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8759,6 +9899,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "محدودیت شارژ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "충전 한도"
           }
         },
         "ru": {
@@ -8807,6 +9953,12 @@
             "value": "تنظیمات محدودیت شارژ را نمایش دهید. کنترل واقعی شارژ به سخت‌افزار بستگی دارد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "충전 한도 설정을 표시합니다. 실제 충전 제어는 하드웨어에 따라 달라집니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8851,6 +10003,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "بیدار شدن با لمس"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭하여 깨우기"
           }
         },
         "ru": {
@@ -8899,6 +10057,12 @@
             "value": "بیدار شدن با لمس را روی دستگاه‌هایی که این قابلیت در آن‌ها پنهان است نمایش دهید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "해당 기능이 숨겨져 있는 기기에서 탭하여 깨우기를 표시합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8943,6 +10107,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "کنترل دوربین"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "카메라 컨트롤"
           }
         },
         "ru": {
@@ -8991,6 +10161,12 @@
             "value": "تنظیمات کنترل دوربین را نمایش دهید. دکمهٔ فیزیکی اضافه نمی‌شود."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "카메라 컨트롤 설정을 표시합니다. 물리적 버튼이 추가되지는 않습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9035,6 +10211,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "دکمهٔ کنش"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "동작 버튼"
           }
         },
         "ru": {
@@ -9083,6 +10265,12 @@
             "value": "صفحهٔ تنظیمات دکمهٔ کنش را نمایش دهید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "동작 버튼 설정 페이지를 표시합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9124,6 +10312,12 @@
           }
         },
         "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Pencil"
+          }
+        },
+        "ko": {
           "stringUnit": {
             "state": "translated",
             "value": "Apple Pencil"
@@ -9175,6 +10369,12 @@
             "value": "تنظیمات Apple Pencil را نمایش دهید. پشتیبانی سخت‌افزاری همچنان لازم است."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Pencil 설정을 표시합니다. 하드웨어 지원이 여전히 필요합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9219,6 +10419,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stage Manager"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스테이지 매니저"
           }
         },
         "ru": {
@@ -9267,6 +10473,12 @@
             "value": "پشتیبانی Stage Manager را نمایش دهید. رفتار چیدمان به دستگاه بستگی دارد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스테이지 매니저 지원을 표시합니다. 레이아웃 동작은 기기마다 다릅니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9311,6 +10523,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "سازگاری برنامه‌های iPad"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPad 앱 호환성"
           }
         },
         "ru": {
@@ -9359,6 +10577,12 @@
             "value": "نوع‌های سازگاری برنامه‌های iPad را روی iPhone مجاز کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone에서 iPad 앱 호환성 유형을 허용합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9403,6 +10627,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "قابلیت Apple Intelligence"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence 기능"
           }
         },
         "ru": {
@@ -9451,6 +10681,12 @@
             "value": "پرچم مدل‌های مولد را تنظیم کنید. دسترس‌پذیری به سخت‌افزار، منطقه و خدمات Apple نیز بستگی دارد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "생성형 모델 기능 플래그를 설정합니다. 실제 사용 가능 여부는 하드웨어, 지역 및 Apple 서비스에 따라 다릅니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9495,6 +10731,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "قابلیت‌های داخلی Apple"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 내부 기능"
           }
         },
         "ru": {
@@ -9543,6 +10785,12 @@
             "value": "منوهای داخلی را نمایش دهید. ممکن است برخی خدمات سیستم رفتار متفاوتی داشته باشند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내부 메뉴를 표시합니다. 일부 시스템 서비스가 다르게 작동할 수 있습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9587,6 +10835,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نمای فضای ذخیره‌سازی داخلی"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내부 저장 공간 뷰"
           }
         },
         "ru": {
@@ -9635,6 +10889,12 @@
             "value": "دسته‌های فضای ذخیره‌سازی داخلی را نمایش دهید. روی iPad آزمایشی است."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내부 저장 공간 분류 항목을 표시합니다. iPad에서는 실험적 기능입니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9679,6 +10939,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "دستگاه پژوهش امنیتی"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보안 연구 기기"
           }
         },
         "ru": {
@@ -9727,6 +10993,12 @@
             "value": "پرچم SRD را تغییر دهید. این کار دستگاه را به یک Apple SRD واقعی تبدیل نمی‌کند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SRD 기능 플래그를 변경합니다. 기기가 실제 Apple SRD로 변환되지는 않습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9771,6 +11043,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ایالات متحده"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미국"
           }
         },
         "ru": {
@@ -9819,6 +11097,12 @@
             "value": "هنگ‌کنگ"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "홍콩"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9863,6 +11147,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ژاپن"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일본"
           }
         },
         "ru": {
@@ -9911,6 +11201,12 @@
             "value": "چین، سرزمین اصلی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "중국 본토"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9955,6 +11251,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "تایوان"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "대만"
           }
         },
         "ru": {
@@ -10003,6 +11305,12 @@
             "value": "بریتانیا"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "영국"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10047,6 +11355,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "به دستگاه متصل شوید یا یک plist باز کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기에 연결하거나 plist를 여십시오."
           }
         },
         "ru": {
@@ -10095,6 +11409,12 @@
             "value": "در حال بررسی دسترسی به دستگاه…"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 접근 권한 확인 중…"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10139,6 +11459,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "دستگاه متصل شد"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 연결됨"
           }
         },
         "ru": {
@@ -10187,6 +11513,12 @@
             "value": "دسترسی به دستگاه ممکن نیست"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기 접근 불가"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10231,6 +11563,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "فایل محلی باز شد"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로컬 파일 열림"
           }
         },
         "ru": {
@@ -10279,6 +11617,12 @@
             "value": "تغییرات روی دستگاه تأیید شدند"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기에서 변경 사항 검증 완료"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10323,6 +11667,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "تغییرات محلی ذخیره شدند"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로컬 변경 사항 저장됨"
           }
         },
         "ru": {
@@ -10371,6 +11721,12 @@
             "value": "تغییرات روی دستگاه تأیید شدند. برای تازه‌سازی قابلیت‌های پشتیبانی‌شده ری‌اسپرینگ کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기에서 변경 사항이 검증되었습니다. 지원되는 기능을 새로고침하려면 리스프링하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10415,6 +11771,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "تغییرات محلی ذخیره شدند. برای نگه‌داشتن یک کپی، plist را صادر کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로컬 변경 사항이 저장되었습니다. 사본을 보관하려면 plist를 내보내십시오."
           }
         },
         "ru": {
@@ -10463,6 +11825,12 @@
             "value": "نسخهٔ پشتیبان ذخیره شد"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "백업 저장됨"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10507,6 +11875,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نسخهٔ پشتیبان بازیابی و تأیید شد."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "백업이 복원되고 검증되었습니다."
           }
         },
         "ru": {
@@ -10555,6 +11929,12 @@
             "value": "نسخهٔ پشتیبان به‌عنوان سند محلی باز شد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "백업이 로컬 문서로 열렸습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10599,6 +11979,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پشتیبان‌گیری دستی"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수동 백업"
           }
         },
         "ru": {
@@ -10647,6 +12033,12 @@
             "value": "پیش از ویرایش"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "편집 전"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10691,6 +12083,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پیش از اعمال"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "적용 전"
           }
         },
         "ru": {
@@ -10739,6 +12137,12 @@
             "value": "پیش از بازیابی"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "복원 전"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10783,6 +12187,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "یک عدد صحیح معتبر وارد کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "올바른 정수를 입력하십시오."
           }
         },
         "ru": {
@@ -10831,6 +12241,12 @@
             "value": "یک عدد اعشاری متناهی وارد کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "유한 소수를 입력하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10875,6 +12291,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "برای مقدار بولی از true یا false استفاده کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "부울(Boolean) 값에는 true 또는 false를 사용하십시오."
           }
         },
         "ru": {
@@ -10923,6 +12345,12 @@
             "value": "دادهٔ معتبر Base64 وارد کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "유효한 Base64 데이터를 입력하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10967,6 +12395,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "یک قطعهٔ آرایه یا دیکشنری XML plist وارد کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "XML plist 형식의 array 또는 dictionary 조각을 입력하십시오."
           }
         },
         "ru": {
@@ -11015,6 +12449,12 @@
             "value": "یک فایل MobileGestalt plist دارای دیکشنری CacheExtra انتخاب کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CacheExtra 딕셔너리가 포함된 MobileGestalt plist를 선택하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11059,6 +12499,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "سند ویرایش‌شده، فهرست ویژگی معتبری نیست."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "편집된 문서가 유효한 프로퍼티 리스트가 아닙니다."
           }
         },
         "ru": {
@@ -11107,6 +12553,12 @@
             "value": "دسترسی به MobileGestalt رد شد. نسخهٔ سیستم‌عامل و امضای App Group را بررسی کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MobileGestalt 접근이 거부되었습니다. OS 버전 및 App Group 서명을 확인하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11151,6 +12603,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نسخهٔ پشتیبان تأیید نشد. نوشتن روی سیستم آغاز نشده است."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "백업을 검증할 수 없습니다. 시스템 쓰기 작업이 시작되지 않았습니다."
           }
         },
         "ru": {
@@ -11199,6 +12657,12 @@
             "value": "این نسخهٔ پشتیبان متعلق به این دستگاه نیست. آن را به‌عنوان فایل محلی باز کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 백업은 현재 기기의 백업이 아닙니다. 대신 로컬 파일로 여십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11243,6 +12707,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "MobileGestalt پس از خوانده‌شدن تغییر کرده است. پیش از اعمال ویرایش‌ها دوباره آن را بخوانید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로드된 이후 MobileGestalt 내용이 변경되었습니다. 수정을 적용하기 전에 새로고침하십시오."
           }
         },
         "ru": {
@@ -11291,6 +12761,12 @@
             "value": "داده‌های نوشته‌شده با نتیجهٔ بازخوانی یکسان نیستند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기록된 데이터가 다시 읽어들인 데이터와 일치하지 않습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11335,6 +12811,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "بازیابی فایل اصلی ممکن نشد."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본 파일을 복원할 수 없습니다."
           }
         },
         "ru": {
@@ -11383,6 +12865,12 @@
             "value": "تأیید نوشتن و بازیابی هر دو ناموفق بودند. نسخهٔ پشتیبان را نگه دارید و پیش از تلاش دوباره، فایل دستگاه را بازیابی کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쓰기 검증 및 복구에 모두 실패했습니다. 백업을 보관하고 기기 파일을 복구한 후 다시 시도하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11427,6 +12915,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نوشتن ناموفق بود. فایل قبلی بازیابی و تأیید شد."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쓰기에 실패했습니다. 이전 파일이 복원되고 검증되었습니다."
           }
         },
         "ru": {
@@ -11475,6 +12969,12 @@
             "value": "دسترسی به دستگاه در شبیه‌ساز ممکن نیست. برای آزمایش GestaltX یک plist باز کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시뮬레이터에서는 기기 접근을 사용할 수 없습니다. GestaltX를 둘러보려면 plist를 여십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11519,6 +13019,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "برنامهٔ امضاشده هیچ App Group قابل استفاده‌ای ندارد. قابلیت App Group را فعال کنید و برنامه را دوباره امضا کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서명된 앱에 사용할 수 있는 App Group이 없습니다. App Group 기능을 활성화하고 다시 서명하십시오."
           }
         },
         "ru": {
@@ -11567,6 +13073,12 @@
             "value": "یک فایل plist کوچک‌تر از 16 مگابایت انتخاب کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "16MB 미만의 plist 파일을 선택하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11611,6 +13123,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "کلید فیلد را وارد کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "필드 키를 입력하십시오."
           }
         },
         "ru": {
@@ -11659,6 +13177,12 @@
             "value": "ابتدا یک سند را بارگذاری کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "먼저 문서를 로드하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11703,6 +13227,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "این کلید از قبل وجود دارد. فیلد موجود را ویرایش کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "해당 키가 이미 존재합니다. 대신 기존 필드를 편집하십시오."
           }
         },
         "ru": {
@@ -11751,6 +13281,12 @@
             "value": "پیش از اعمال، نام مدل را وارد کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "적용하기 전에 모델명을 입력하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11795,6 +13331,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "اندکی امکانات بیشتر."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더 넓어진 가능성."
           }
         },
         "ru": {
@@ -11843,6 +13385,12 @@
             "value": "پروژه‌های دیگر huamidev"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "huamidev의 다른 프로젝트"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11887,6 +13435,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "حداقل نسخهٔ سیستم‌عامل"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최소 OS 요구사항"
           }
         },
         "ru": {
@@ -11935,6 +13489,12 @@
             "value": "زبان‌ها"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "언어"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11979,6 +13539,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "سازگاری"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "호환성"
           }
         },
         "ru": {
@@ -12027,6 +13593,12 @@
             "value": "سپاسگزاری"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "크레딧"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12071,6 +13643,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "خروج از سندباکس با worse_query"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "worse_query 샌드박스 탈출"
           }
         },
         "ru": {
@@ -12119,6 +13697,12 @@
             "value": "روش اصلی ری‌اسپرینگ با WebKit"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최초의 WebKit 리스프링 방식"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12163,6 +13747,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پیاده‌سازی روش ری‌اسپرینگ در Swift"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swift로 구현된 리스프링 방식"
           }
         },
         "ru": {
@@ -12211,6 +13801,12 @@
             "value": "پروژهٔ NeoSpring و پژوهش ری‌اسپرینگ"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NeoSpring 프로젝트 및 리스프링 연구"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12255,6 +13851,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "نسخهٔ سازگارشدهٔ ری‌اسپرینگ با مجوز GPL"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GPL 라이선스 리스프링 적용"
           }
         },
         "ru": {
@@ -12303,6 +13905,12 @@
             "value": "پژوهش کلیدهای MobileGestalt"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MobileGestalt 키 연구"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12347,6 +13955,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پژوهش پیش‌تنظیم‌های MobileGestalt"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MobileGestalt 프리셋 연구"
           }
         },
         "ru": {
@@ -12395,6 +14009,12 @@
             "value": "مرجع گردش‌کار MobileGestalt"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MobileGestalt 워크플로우 참조"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12439,6 +14059,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "متن‌باز"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오픈 소스"
           }
         },
         "ru": {
@@ -12487,6 +14113,12 @@
             "value": "اطلاعیه‌های اجزای شخص ثالث"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제3자 고지 사항"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12533,6 +14165,12 @@
             "value": "GestaltX نرم‌افزاری مستقل است و به Apple یا پروژه‌های ذکرشده وابسته نیست."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GestaltX는 독립 소프트웨어입니다. Apple 또는 크레딧에 명시된 프로젝트들과 제휴되어 있지 않습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12574,6 +14212,12 @@
           }
         },
         "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "worse_query"
+          }
+        },
+        "ko": {
           "stringUnit": {
             "state": "translated",
             "value": "worse_query"
@@ -12625,6 +14269,12 @@
             "value": "مسیرهای قابل دسترسی و پیش‌تنظیم‌های MobileGestalt بسته به دستگاه و نسخهٔ سیستم‌عامل متفاوت‌اند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용 가능한 경로 및 MobileGestalt 프리셋은 기기 및 OS 빌드에 따라 다릅니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12669,6 +14319,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "دیدن سازگاری پروژهٔ اصلی"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본 프로젝트 호환성 확인"
           }
         },
         "ru": {
@@ -12717,6 +14373,12 @@
             "value": "دسترسی به MobileGestalt"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MobileGestalt 접근"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12761,6 +14423,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "iOS 27: دسترسی روی دستگاه بررسی می‌شود."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS 27: 기기에서 접근 권한을 확인합니다."
           }
         },
         "ru": {
@@ -12809,6 +14477,12 @@
             "value": "iOS 26: پروژهٔ اصلی پشتیبانی از دسترسی به SystemGroup را اعلام نکرده است. ویرایش plist محلی در دسترس است."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS 26: 원본 프로젝트에서 SystemGroup 접근을 지원하지 않습니다. 로컬 plist 편집이 가능합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12855,6 +14529,12 @@
             "value": "App Group باید به‌درستی پیکربندی و امضا شده باشد. هر سندی که باز می‌کنید قابل صدور و پشتیبان‌گیری است."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "올바르게 프로비저닝된 App Group이 필요합니다. 열 수 있는 모든 문서에 대해 내보내기 및 백업이 가능합니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12896,6 +14576,12 @@
           }
         },
         "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NeoSpring"
+          }
+        },
+        "ko": {
           "stringUnit": {
             "state": "translated",
             "value": "NeoSpring"
@@ -12947,6 +14633,12 @@
             "value": "NeoSpring با WebKit برای تازه‌سازی SpringBoard تلاش می‌کند. نتیجه به نسخهٔ سیستم‌عامل بستگی دارد. برخی تغییرات MobileGestalt همچنان ممکن است به راه‌اندازی مجدد دستی نیاز داشته باشند."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NeoSpring은 WebKit을 사용하여 SpringBoard 새로고침을 시도합니다. 효과는 OS 빌드에 따라 다릅니다. 일부 MobileGestalt 변경 사항은 수동으로 기기를 재시동해야 할 수도 있습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12991,6 +14683,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "بارگذاری متن مجوز ممکن نشد."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "라이선스 텍스트를 불러올 수 없습니다."
           }
         },
         "ru": {
@@ -13039,6 +14737,12 @@
             "value": "ری‌اسپرینگ کامل نشد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "리스프링이 완료되지 않았습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13083,6 +14787,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "در حال تازه‌سازی SpringBoard…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpringBoard 새로고침 중…"
           }
         },
         "ru": {
@@ -13131,6 +14841,12 @@
             "value": "ممکن است این نسخهٔ سیستم‌عامل از این روش پشتیبانی نکند. می‌توانید این صفحه را ببندید و بعداً دستگاه را به‌صورت دستی دوباره راه‌اندازی کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 OS 빌드는 해당 방식을 지원하지 않을 수 있습니다. 이 화면을 닫고 나중에 수동으로 재시동할 수 있습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13175,6 +14891,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ممکن است دستگاه برای لحظاتی به صفحهٔ قفل برگردد."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기가 잠시 잠금 화면으로 돌아갈 수 있습니다."
           }
         },
         "ru": {
@@ -13223,6 +14945,12 @@
             "value": "ساختار یا مقادیر حافظهٔ نهان با این تنظیم مطابقت ندارد."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "캐시 레이아웃 또는 값이 이 프리셋과 일치하지 않습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13267,6 +14995,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "این تنظیم بایت‌های نامرتبط حافظهٔ نهان را تغییر می‌دهد."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 프리셋은 관련 없는 캐시 바이트를 변경합니다."
           }
         },
         "ru": {
@@ -13315,6 +15049,12 @@
             "value": "ساختار حافظهٔ نهان MobileGestalt این دستگاه قابل تشخیص نیست."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 기기의 MobileGestalt 캐시 레이아웃을 파악할 수 없습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13359,6 +15099,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "در حال وارد کردن plist…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plist 가져오는 중…"
           }
         },
         "ru": {
@@ -13407,6 +15153,12 @@
             "value": "هر بار یک فایل plist مربوط به MobileGestalt را به اشتراک بگذارید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 번에 하나의 MobileGestalt plist 파일만 공유하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13451,6 +15203,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "GestaltX و افزونهٔ اشتراک‌گذاری آن را با App Group یکسان امضا کنید و دوباره امتحان کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GestaltX와 해당 공유 확장 프로그램(Share Extension)을 동일한 App Group으로 서명한 후 다시 시도하십시오."
           }
         },
         "ru": {
@@ -13499,6 +15257,12 @@
             "value": "فایل plist اشتراک‌گذاری‌شده خوانده نشد. دوباره آن را به اشتراک بگذارید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "공유된 plist를 읽을 수 없습니다. 다시 공유해 주십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13543,6 +15307,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "یک فایل plist اشتراک‌گذاری‌شده در انتظار است. ابتدا تغییرات فعلی را ذخیره یا لغو کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "공유된 plist가 대기 중입니다. 현재 변경 사항을 저장하거나 취소한 후 가져오십시오."
           }
         },
         "ru": {
@@ -13591,6 +15361,12 @@
             "value": "پیش از باز کردن plist دیگر، تغییرات فعلی را ذخیره یا لغو کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다른 plist를 열기 전에 현재 변경 사항을 저장하거나 취소하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13635,6 +15411,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "وارد کردن"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "가져오기"
           }
         },
         "ru": {
@@ -13683,6 +15465,12 @@
             "value": "برای تأیید وارد کردن plist، برنامهٔ GestaltX را باز کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "plist 가져오기를 확인하려면 GestaltX를 여십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13727,6 +15515,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "هویت این دستگاه تأیید نشد. ابتدا MobileGestalt را روی همین دستگاه بخوانید و دوباره فایل را به اشتراک بگذارید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 기기의 식별 정보를 확인할 수 없습니다. 이 기기에서 MobileGestalt를 읽은 다음 다시 공유해 보십시오."
           }
         },
         "ru": {
@@ -13775,6 +15569,12 @@
             "value": "شناسه‌های این plist با دستگاه فعلی مطابقت ندارند و فایل قابل وارد کردن نیست."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 plist는 다른 기기의 것이므로 가져올 수 없습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13819,6 +15619,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "این plist شناسه‌های کافی برای تأیید تعلق به دستگاه فعلی ندارد."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 plist에는 소유권을 확인할 수 있는 기기 식별자가 충분하지 않습니다."
           }
         },
         "ru": {
@@ -13867,6 +15673,12 @@
             "value": "گزینه‌های بیشتر"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가 옵션"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13911,6 +15723,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "کنترل MG"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MG Control"
           }
         },
         "ru": {
@@ -13959,6 +15777,12 @@
             "value": "MobileGestalt را در ابزارها بخوانید یا plist همین دستگاه را با GestaltX به اشتراک بگذارید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도구에서 MobileGestalt를 읽거나, 이 기기의 plist를 GestaltX로 공유하십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -14003,6 +15827,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "این plist برای همین دستگاه تأیید شده است. فایل وارد شود؟"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 plist는 이 기기용으로 검증되었습니다. 가져오시겠습니까?"
           }
         },
         "ru": {
@@ -14051,6 +15881,12 @@
             "value": "گواه دستگاه این plist در دستگاه فعلی قابل تأیید نیست."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 plist의 기기 증명을 이 기기에서 검증할 수 없습니다."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -14095,6 +15931,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ساختار حافظهٔ نهان سیستم این plist با دستگاه فعلی متفاوت است و قابل بازیابی نیست."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 plist는 다른 시스템 캐시 레이아웃을 사용하므로 복원할 수 없습니다."
           }
         },
         "ru": {
@@ -14143,6 +15985,12 @@
             "value": "بازیابی plist واردشده"
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "가져온 Plist 복원"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -14187,6 +16035,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "پیش از بازیابی، از فایل فعلی دستگاه نسخهٔ پشتیبان تهیه می‌شود. پس از پایان، دستگاه را راه‌اندازی مجدد کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "복원하기 전에 현재 기기 파일이 백업됩니다. 완료 후 기기를 재시동하십시오."
           }
         },
         "ru": {
@@ -14235,6 +16089,12 @@
             "value": "plist همین دستگاه را با GestaltX به اشتراک بگذارید تا پس از تأیید، کلیدها و مقدارها را اضافه، ویرایش یا حذف کنید یا نسخهٔ پشتیبان را بازیابی کنید. بهتر است ابتدا یک نسخه با گواه مخصوص دستگاه از GestaltX صادر کنید."
           }
         },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키와 값을 편집하거나 검증된 백업을 복원하려면 이 기기의 plist를 GestaltX에 공유하십시오. 기기 고유 증명을 유지하려면 먼저 GestaltX에서 사본을 내보내십시오."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -14257,6 +16117,630 @@
           "stringUnit": {
             "state": "translated",
             "value": "現在可將本機 plist 分享至 GestaltX，核驗後匯入、新增、刪除或修改鍵值並回復。建議先從 GestaltX 匯出一份附有本機驗證憑證的備份。"
+          }
+        }
+      }
+    },
+    "Canada": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canada"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加拿大"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "کانادا"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "캐나다"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Канада"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canada"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加拿大"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加拿大"
+          }
+        }
+      }
+    },
+    "Model Number": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Model Number"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "型号号码"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شمارهٔ مدل"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모델 번호"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Номер модели"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Số kiểu máy"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "型號號碼"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "型號號碼"
+          }
+        }
+      }
+    },
+    "A device restart may be required after changing the model number.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A device restart may be required after changing the model number."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "修改型号号码后可能需要重启设备。"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "پس از تغییر شمارهٔ مدل ممکن است لازم باشد دستگاه را راه‌اندازی مجدد کنید."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모델 번호를 변경한 후 기기를 재시동해야 할 수 있습니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "После изменения номера модели может потребоваться перезагрузка устройства."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Có thể cần khởi động lại thiết bị sau khi đổi số kiểu máy."
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "修改型號號碼後可能需要重新啟動裝置。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "修改型號號碼後可能需要重新啟動裝置。"
+          }
+        }
+      }
+    },
+    "Listed values apply to iPhone 18 Pro and iPhone 18 Pro Max only. Choosing a model number that does not match your hardware can make verification tools report a mismatch.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listed values apply to iPhone 18 Pro and iPhone 18 Pro Max only. Choosing a model number that does not match your hardware can make verification tools report a mismatch."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下号码仅适用于 iPhone 18 Pro 和 iPhone 18 Pro Max。选择与硬件不符的号码，可能导致验机工具报告不匹配。"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "این شماره‌ها فقط برای iPhone 18 Pro و iPhone 18 Pro Max هستند. انتخاب شماره‌ای ناسازگار با سخت‌افزار ممکن است باعث گزارش عدم تطابق در ابزارهای بررسی شود."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "표시된 번호는 iPhone 18 Pro 및 iPhone 18 Pro Max에만 해당합니다. 하드웨어와 다른 번호를 선택하면 기기 검사 도구에서 불일치가 보고될 수 있습니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Эти номера предназначены только для iPhone 18 Pro и iPhone 18 Pro Max. Номер, не соответствующий оборудованию, может вызвать предупреждение в программах проверки."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Các số này chỉ dành cho iPhone 18 Pro và iPhone 18 Pro Max. Chọn số không khớp phần cứng có thể khiến công cụ kiểm tra báo không khớp."
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下號碼僅適用於 iPhone 18 Pro 和 iPhone 18 Pro Max。選擇與硬件不符的號碼，可能導致驗機工具顯示不符。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下號碼僅適用於 iPhone 18 Pro 和 iPhone 18 Pro Max。選擇與硬體不符的號碼，可能導致驗機工具回報不符。"
+          }
+        }
+      }
+    },
+    "A3472 — 18 Pro · United States": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3472 — 18 Pro · United States"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3472 — 18 Pro · 美国"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3472 — 18 Pro · ایالات متحده"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3472 — 18 Pro · 미국"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3472 — 18 Pro · США"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3472 — 18 Pro · Hoa Kỳ"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3472 — 18 Pro · 美國"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3472 — 18 Pro · 美國"
+          }
+        }
+      }
+    },
+    "A3713 — 18 Pro · Canada / Japan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3713 — 18 Pro · Canada / Japan"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3713 — 18 Pro · 加拿大／日本"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3713 — 18 Pro · کانادا / ژاپن"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3713 — 18 Pro · 캐나다 / 일본"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3713 — 18 Pro · Канада / Япония"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3713 — 18 Pro · Canada / Nhật Bản"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3713 — 18 Pro · 加拿大／日本"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3713 — 18 Pro · 加拿大／日本"
+          }
+        }
+      }
+    },
+    "A3714 — 18 Pro · Other regions": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3714 — 18 Pro · Other regions"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3714 — 18 Pro · 其他地区"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3714 — 18 Pro · سایر مناطق"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3714 — 18 Pro · 기타 지역"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3714 — 18 Pro · Другие регионы"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3714 — 18 Pro · Khu vực khác"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3714 — 18 Pro · 其他地區"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3714 — 18 Pro · 其他地區"
+          }
+        }
+      }
+    },
+    "A3715 — 18 Pro · China mainland": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3715 — 18 Pro · China mainland"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3715 — 18 Pro · 中国大陆"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3715 — 18 Pro · سرزمین اصلی چین"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3715 — 18 Pro · 중국 본토"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3715 — 18 Pro · Материковый Китай"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3715 — 18 Pro · Trung Quốc đại lục"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3715 — 18 Pro · 中國大陸"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3715 — 18 Pro · 中國大陸"
+          }
+        }
+      }
+    },
+    "A3473 — 18 Pro Max · United States": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3473 — 18 Pro Max · United States"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3473 — 18 Pro Max · 美国"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3473 — 18 Pro Max · ایالات متحده"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3473 — 18 Pro Max · 미국"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3473 — 18 Pro Max · США"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3473 — 18 Pro Max · Hoa Kỳ"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3473 — 18 Pro Max · 美國"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3473 — 18 Pro Max · 美國"
+          }
+        }
+      }
+    },
+    "A3716 — 18 Pro Max · Canada / Japan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3716 — 18 Pro Max · Canada / Japan"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3716 — 18 Pro Max · 加拿大／日本"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3716 — 18 Pro Max · کانادا / ژاپن"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3716 — 18 Pro Max · 캐나다 / 일본"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3716 — 18 Pro Max · Канада / Япония"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3716 — 18 Pro Max · Canada / Nhật Bản"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3716 — 18 Pro Max · 加拿大／日本"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3716 — 18 Pro Max · 加拿大／日本"
+          }
+        }
+      }
+    },
+    "A3717 — 18 Pro Max · Other regions": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3717 — 18 Pro Max · Other regions"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3717 — 18 Pro Max · 其他地区"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3717 — 18 Pro Max · سایر مناطق"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3717 — 18 Pro Max · 기타 지역"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3717 — 18 Pro Max · Другие регионы"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3717 — 18 Pro Max · Khu vực khác"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3717 — 18 Pro Max · 其他地區"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3717 — 18 Pro Max · 其他地區"
+          }
+        }
+      }
+    },
+    "A3718 — 18 Pro Max · China mainland": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3718 — 18 Pro Max · China mainland"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3718 — 18 Pro Max · 中国大陆"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3718 — 18 Pro Max · سرزمین اصلی چین"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3718 — 18 Pro Max · 중국 본토"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3718 — 18 Pro Max · Материковый Китай"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3718 — 18 Pro Max · Trung Quốc đại lục"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3718 — 18 Pro Max · 中國大陸"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A3718 — 18 Pro Max · 中國大陸"
           }
         }
       }

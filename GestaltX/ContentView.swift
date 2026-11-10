@@ -301,7 +301,15 @@ struct CategoryView: View {
                     Picker(L("Model Number"), selection: $model.modelID) {
                         ForEach(ModelPreset.all) { Text(L($0.title)).tag($0.id) }
                     }
-                    if model.modelID != "keep" { Text(L("A device restart may be required after changing the model number.")).font(.caption).foregroundStyle(.secondary) }
+                    HStack(alignment: .firstTextBaseline) {
+                        if model.modelID != "keep" {
+                            Text(L("A device restart may be required after changing the model number.")).font(.caption).foregroundStyle(.secondary)
+                        }
+                        Spacer(minLength: 8)
+                        Button(L("Revert")) { Task { await model.restoreCapability(ModelPreset.restoration) } }
+                            .font(.caption).buttonStyle(.borderless)
+                            .disabled(!model.canRestore(ModelPreset.restoration))
+                    }
                 } footer: {
                     Text(L("Listed values apply to iPhone 18 Pro and iPhone 18 Pro Max only. Choosing a model number that does not match your hardware can make verification tools report a mismatch."))
                 }

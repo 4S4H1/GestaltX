@@ -179,6 +179,7 @@ final class GestaltManager: ObservableObject {
         guard !isBusy, let snapshot, let working else { return false }
         if (choices[capability.id] ?? .keep) != .keep { return true }
         if capability.id == "dynamicIsland" && subtype != 0 { return true }
+        if capability.id == ModelPreset.restoration.id && modelID != "keep" { return true }
         return capability.keys.contains { key in
             switch (snapshot.originalValue(for: key), working.extra[key]) {
             case (nil, nil): false
@@ -210,6 +211,7 @@ final class GestaltManager: ObservableObject {
             working = before.rebasingPendingEdits(pending, onto: result.document, excluding: Set(capability.keys))
             choices[capability.id] = .keep
             if capability.id == "dynamicIsland" { subtype = 0 }
+            if capability.id == ModelPreset.restoration.id { modelID = "keep" }
             log("[restore-field] " + L(capability.title) + ": " + L("Original values restored."))
             await reloadBackups()
         } catch { failed(error); await reloadBackups() }
@@ -410,6 +412,7 @@ final class GestaltManager: ObservableObject {
         for capability in Capability.all where !changedKeys.isDisjoint(with: capability.keys) { choices[capability.id] = .keep }
         if !changedKeys.isDisjoint(with: [GestaltKeys.regionCode, GestaltKeys.regionInfo, GestaltKeys.legacyRegionInfo]) { regionID = "keep"; regionCodeID = "keep" }
         if changedKeys.contains(GestaltKeys.artwork) { subtype = 0 }
+        if changedKeys.contains(GestaltKeys.modelNumber) { modelID = "keep" }
         if !changedKeys.isDisjoint(with: [GestaltKeys.artwork, "Z/dqyWS6OZTRy10UcmUAhw", "bbtR9jQx50Fv5Af/affNtA"]) { changesName = false }
     }
     func removeField(_ key: String) {
@@ -417,6 +420,7 @@ final class GestaltManager: ObservableObject {
         for capability in Capability.all where capability.keys.contains(key) { choices[capability.id] = .keep }
         if [GestaltKeys.regionCode, GestaltKeys.regionInfo, GestaltKeys.legacyRegionInfo].contains(key) { regionID = "keep"; regionCodeID = "keep" }
         if key == GestaltKeys.artwork { subtype = 0 }
+        if key == GestaltKeys.modelNumber { modelID = "keep" }
         if [GestaltKeys.artwork, "Z/dqyWS6OZTRy10UcmUAhw", "bbtR9jQx50Fv5Af/affNtA"].contains(key) { changesName = false }
     }
 

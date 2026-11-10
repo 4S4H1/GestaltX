@@ -105,6 +105,8 @@ struct RegionPreset: Identifiable {
 }
 
 struct ModelPreset: Identifiable {
+    static let restoration = Capability(id: "modelNumber", category: .intelligence, title: "Model Number",
+                                        detail: "", keys: [GestaltKeys.modelNumber])
     let id: String
     let title: String
     let value: String

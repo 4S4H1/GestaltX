@@ -308,5 +308,17 @@
   "This plist uses a different system cache layout and cannot be restored.": "이 plist는 다른 시스템 캐시 레이아웃을 사용하므로 복원할 수 없습니다.",
   "Restore Imported Plist": "가져온 Plist 복원",
   "The current device file will be backed up before restoring. Restart the device afterward.": "복원하기 전에 현재 기기 파일이 백업됩니다. 완료 후 기기를 재시동하십시오.",
-  "Share this device's plist to GestaltX to edit its keys and values or restore a verified backup. Export a copy from GestaltX first to keep a device-bound proof.": "키와 값을 편집하거나 검증된 백업을 복원하려면 이 기기의 plist를 GestaltX에 공유하십시오. 기기 고유 증명을 유지하려면 먼저 GestaltX에서 사본을 내보내십시오."
+  "Share this device's plist to GestaltX to edit its keys and values or restore a verified backup. Export a copy from GestaltX first to keep a device-bound proof.": "키와 값을 편집하거나 검증된 백업을 복원하려면 이 기기의 plist를 GestaltX에 공유하십시오. 기기 고유 증명을 유지하려면 먼저 GestaltX에서 사본을 내보내십시오.",
+  "Canada": "캐나다",
+  "Model Number": "모델 번호",
+  "A device restart may be required after changing the model number.": "모델 번호를 변경한 후 기기를 재시동해야 할 수 있습니다.",
+  "Listed values apply to iPhone 18 Pro and iPhone 18 Pro Max only. Choosing a model number that does not match your hardware can make verification tools report a mismatch.": "표시된 번호는 iPhone 18 Pro 및 iPhone 18 Pro Max에만 해당합니다. 하드웨어와 다른 번호를 선택하면 기기 검사 도구에서 불일치가 보고될 수 있습니다.",
+  "A3472 — 18 Pro · United States": "A3472 — 18 Pro · 미국",
+  "A3713 — 18 Pro · Canada / Japan": "A3713 — 18 Pro · 캐나다 / 일본",
+  "A3714 — 18 Pro · Other regions": "A3714 — 18 Pro · 기타 지역",
+  "A3715 — 18 Pro · China mainland": "A3715 — 18 Pro · 중국 본토",
+  "A3473 — 18 Pro Max · United States": "A3473 — 18 Pro Max · 미국",
+  "A3716 — 18 Pro Max · Canada / Japan": "A3716 — 18 Pro Max · 캐나다 / 일본",
+  "A3717 — 18 Pro Max · Other regions": "A3717 — 18 Pro Max · 기타 지역",
+  "A3718 — 18 Pro Max · China mainland": "A3718 — 18 Pro Max · 중국 본토"
 }

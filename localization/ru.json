@@ -308,5 +308,17 @@
   "This plist uses a different system cache layout and cannot be restored.": "Структура системного кэша plist отличается от текущей. Восстановление невозможно.",
   "Restore Imported Plist": "Восстановить импортированный plist",
   "The current device file will be backed up before restoring. Restart the device afterward.": "Перед восстановлением будет создана резервная копия текущего файла устройства. Затем перезагрузите устройство.",
-  "Share this device's plist to GestaltX to edit its keys and values or restore a verified backup. Export a copy from GestaltX first to keep a device-bound proof.": "Отправьте plist этого устройства в GestaltX для проверки, импорта, добавления, изменения и удаления ключей и восстановления копии. Сначала рекомендуется экспортировать копию из GestaltX с подтверждением для этого устройства."
+  "Share this device's plist to GestaltX to edit its keys and values or restore a verified backup. Export a copy from GestaltX first to keep a device-bound proof.": "Отправьте plist этого устройства в GestaltX для проверки, импорта, добавления, изменения и удаления ключей и восстановления копии. Сначала рекомендуется экспортировать копию из GestaltX с подтверждением для этого устройства.",
+  "Canada": "Канада",
+  "Model Number": "Номер модели",
+  "A device restart may be required after changing the model number.": "После изменения номера модели может потребоваться перезагрузка устройства.",
+  "Listed values apply to iPhone 18 Pro and iPhone 18 Pro Max only. Choosing a model number that does not match your hardware can make verification tools report a mismatch.": "Эти номера предназначены только для iPhone 18 Pro и iPhone 18 Pro Max. Номер, не соответствующий оборудованию, может вызвать предупреждение в программах проверки.",
+  "A3472 — 18 Pro · United States": "A3472 — 18 Pro · США",
+  "A3713 — 18 Pro · Canada / Japan": "A3713 — 18 Pro · Канада / Япония",
+  "A3714 — 18 Pro · Other regions": "A3714 — 18 Pro · Другие регионы",
+  "A3715 — 18 Pro · China mainland": "A3715 — 18 Pro · Материковый Китай",
+  "A3473 — 18 Pro Max · United States": "A3473 — 18 Pro Max · США",
+  "A3716 — 18 Pro Max · Canada / Japan": "A3716 — 18 Pro Max · Канада / Япония",
+  "A3717 — 18 Pro Max · Other regions": "A3717 — 18 Pro Max · Другие регионы",
+  "A3718 — 18 Pro Max · China mainland": "A3718 — 18 Pro Max · Материковый Китай"
 }

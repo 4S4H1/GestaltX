@@ -39,7 +39,7 @@
 
 支持 **iOS / iPadOS 27.x**。**iOS / iPadOS 26.x 不支持本机 MobileGestalt 访问。** 基于 [worse_query](https://github.com/forcequitOS/worse_query)。SystemGroup 访问需要 iOS 27，功能可用性因设备与系统而异，同时支持本地 plist 编辑。
 
-签名所用的证书及描述文件必须提供至少一个可用的 App Group。主应用和内置分享扩展必须签入至少一个**相同的 App Group**，重签时请保留分享扩展。两者均会在运行时读取实际签名中的 App Group。
+签名所用的证书及描述文件必须提供至少一个可用的 App Group。主应用和内置分享扩展必须签入至少一个**相同的 App Group**，重签时请保留分享扩展。两者均会在运行时读取实际签名中的 App Group。发布的 IPA 使用 ad-hoc 签名嵌入这些 entitlements，便于 SideStore、AltStore 在重签时识别，不使用开发者证书。
 
 ## 导入 plist
 
