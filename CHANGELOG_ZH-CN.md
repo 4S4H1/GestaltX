@@ -17,6 +17,7 @@
 - 新增设备预设：车祸检测 SOS、音频混音、FaceTime 空间音频。
 - 新增智能预设：端侧 Siri、音频智能、个人翻译、照片 Clean Up、手写合成、
   常听 Hey Siri。这些仍然只是能力标记，实际是否运行仍取决于硬件和地区。
+- 新增韩语本地化，应用现支持 8 种语言（#24）。
 - CI 现在会自动构建 ad-hoc 签名 IPA 并上传为 artifact；
   tag 和 Release 运行还会附加到对应 Release。
 

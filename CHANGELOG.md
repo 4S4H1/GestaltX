@@ -22,6 +22,7 @@ Build `11101436`.
   Translator, Photos Clean Up, Handwriting Synthesis, and always-listening Hey
   Siri. These remain capability flags; hardware and region still decide what
   actually runs.
+- Korean localization, bringing the app to eight supported languages (#24).
 - CI now builds an ad-hoc signed IPA automatically and uploads it as an
   artifact; tag and release runs also attach it to the matching release.
 
