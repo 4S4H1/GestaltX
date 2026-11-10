@@ -74,9 +74,30 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-      - name: Upload IPA to release
+      - name: Publish release assets
         if: env.TAG != ''
         env:
           GH_TOKEN: ${{ github.token }}
           IPA: ${{ steps.build.outputs.ipa }}
-        run: gh release upload "$TAG" "$IPA" --clobber
+        run: |
+          version="${TAG#v}"
+          notes="$RUNNER_TEMP/release-notes.md"
+          : > "$notes"
+          if [[ -f CHANGELOG.md ]]; then
+            awk -v ver="$version" '
+              $0 ~ "^## \\[" ver "\\]" { found = 1; next }
+              found && /^## \[/ { exit }
+              found { print }
+            ' CHANGELOG.md > "$notes"
+          fi
+          if [[ ! -s "$notes" ]]; then
+            printf 'GestaltX %s\n' "$TAG" > "$notes"
+          fi
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --verify-tag \
+              --title "GestaltX $TAG" --notes-file "$notes"
+          fi
+          assets=("$IPA")
+          [[ -f CHANGELOG.md ]] && assets+=("CHANGELOG.md")
+          [[ -f CHANGELOG_ZH-CN.md ]] && assets+=("CHANGELOG_ZH-CN.md")
+          gh release upload "$TAG" "${assets[@]}" --clobber
