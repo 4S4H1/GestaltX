@@ -41,7 +41,8 @@ import Foundation
         }
         let newDate = FieldDraft(key: "added", kind: .date, text: "2026-11-09T12:00:00Z")
         try expect(try newDate.parsedValue() is Date, "New fields without an original value are parsed normally")
-        let changedInteger = FieldDraft(originalKey: "number", key: "number", kind: .integer, text: "8", originalValue: NSNumber(value: 7))
+        var changedInteger = FieldDraft(originalKey: "number", key: "number", kind: .integer, text: "7", originalValue: NSNumber(value: 7))
+        changedInteger.text = "8"
         try expect((try changedInteger.parsedValue() as? NSNumber)?.intValue == 8, "Changed ordinary fields still use normal parsing")
         try expect(PlistValueKind.date.text(for: preciseDate).contains("."), "Date editing text includes fractional seconds")
         print("PASS: exact date and nested-date preservation, key renames, changed values, explicit types and new drafts.")
