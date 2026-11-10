@@ -31,7 +31,9 @@ enum PlistValueKind: String, CaseIterable, Identifiable, Sendable {
         switch self {
         case .string: return text
         case .integer:
-            guard let value = Int64(trimmed) else { throw GestaltFailure("Enter a valid whole number.") }
+            if let value = Int64(trimmed) { return NSNumber(value: value) }
+            // Binary plists can also contain unsigned 64-bit identifiers.
+            guard let value = UInt64(trimmed) else { throw GestaltFailure("Enter a valid whole number.") }
             return NSNumber(value: value)
         case .real:
             guard let value = Double(trimmed), value.isFinite else { throw GestaltFailure("Enter a finite decimal number.") }
@@ -165,7 +167,10 @@ struct GestaltDocument: @unchecked Sendable {
         case .array:
             guard let left = a as? [Any], let right = b as? [Any], left.count == right.count else { return false }
             return zip(left, right).allSatisfy { valuesEqual($0.0, $0.1) }
-        case .integer: return (a as? NSNumber)?.int64Value == (b as? NSNumber)?.int64Value
+        case .integer:
+            // int64Value wraps unsigned values above Int64.max (for example,
+            // UInt64.max becomes -1), hiding edits and readback corruption.
+            return (a as? NSNumber)?.stringValue == (b as? NSNumber)?.stringValue
         case .real: return (a as? NSNumber)?.doubleValue == (b as? NSNumber)?.doubleValue
         case .boolean: return (a as? NSNumber)?.boolValue == (b as? NSNumber)?.boolValue
         case .data: return (a as? Data) == (b as? Data)
