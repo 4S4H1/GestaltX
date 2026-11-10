@@ -87,6 +87,7 @@ enum GestaltKeys {
     static let regionInfo = "zHeENZu+wbg7PUprwNwBWg"
     static let legacyRegionInfo = "yK+xavymRGZ3xWc1tb8XDg"
     static let productType = "h9jDsbgj7xIVeIQ8S3/X3Q"
+    static let modelNumber = "97JDvERpVwO+GHtthIh7hA"
 }
 
 struct GestaltDocument: @unchecked Sendable {
@@ -128,6 +129,11 @@ struct GestaltDocument: @unchecked Sendable {
         guard let salesSuffix else { return }
         let present = [GestaltKeys.regionInfo, GestaltKeys.legacyRegionInfo].filter { extra[$0] != nil }
         for key in present.isEmpty ? [GestaltKeys.regionInfo] : present { set(salesSuffix, for: key) }
+    }
+
+    mutating func applyModel(_ model: ModelPreset?) {
+        guard let model, model.id != "keep" else { return }
+        set(model.value, for: GestaltKeys.modelNumber)
     }
 
     mutating func applyRegion(salesRegion: RegionPreset?, regionCode: RegionPreset?) {
