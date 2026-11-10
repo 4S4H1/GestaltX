@@ -402,7 +402,7 @@ struct CategoryView: View {
                     }
                     }
                 }
-                if category == .device && model.additionalOptionsUnlocked {
+                if category == .device {
                     AdditionalOptionsRow()
                     WAPIPresetRow()
                 }
