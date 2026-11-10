@@ -85,3 +85,13 @@ GestaltX 跟随 iOS 的语言设置，默认及回退语言为英语。波斯语
 ## 许可证
 
 [GNU GPL v3](LICENSE) · Copyright © 2026 huamidev。
+
+## Star History
+
+<a href="https://www.star-history.com/#huamidev/GestaltX&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date&amp;theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date" />
+    <img alt="GestaltX Star 增长历史" src="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date" />
+  </picture>
+</a>
