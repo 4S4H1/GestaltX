@@ -23,6 +23,8 @@ final class GestaltManager: ObservableObject {
     @Published private(set) var logs: [String] = []
     @Published var message: String?
     @Published var isRespringing = false
+    @Published private(set) var additionalOptionsUnlocked = false
+    func unlockAdditionalOptions() { additionalOptionsUnlocked = true }
     @Published var needsRespring = false
     @Published var choices: [String: PresetChoice] = [:]
     @Published var regionID = "keep"
@@ -142,7 +144,7 @@ final class GestaltManager: ObservableObject {
     }
 
     func stageCacheOption(_ choice: CacheOptionChoice) {
-        guard !isBusy, var document = working, let snapshot else { return }
+        guard additionalOptionsUnlocked, !isBusy, var document = working, let snapshot else { return }
         do {
             let flags: CachedOptionFlags
             switch choice {

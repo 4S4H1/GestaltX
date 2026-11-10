@@ -402,7 +402,7 @@ struct CategoryView: View {
                     }
                     }
                 }
-                if category == .device { AdditionalOptionsRow() }
+                if category == .device && model.additionalOptionsUnlocked { AdditionalOptionsRow() }
             } header: {
                 Text(L("Presets"))
             }
