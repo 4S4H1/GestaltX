@@ -38,13 +38,24 @@ struct SharedPlistInbox: Sendable {
     }
 
     // Read within the item-provider callback, while its temporary URL is valid.
-    static func readDocument(at url: URL) throws -> Data {
+    static func readDocument(at url: URL, coordinator: NSFileCoordinator = NSFileCoordinator()) throws -> Data {
         guard url.isFileURL else { throw invalidQueue }
         let scoped = url.startAccessingSecurityScopedResource()
         defer { if scoped { url.stopAccessingSecurityScopedResource() } }
-        let data = try readLimited(url, limit: maximumByteCount)
-        try validate(data)
-        return data
+        // A security scope grants access, while coordination asks File Providers
+        // to materialize their document and keeps concurrent changes out of the read.
+        var coordinationError: NSError?
+        var result: Result<Data, Error>?
+        coordinator.coordinate(readingItemAt: url, options: [], error: &coordinationError) { readableURL in
+            result = Result {
+                let data = try readLimited(readableURL, limit: maximumByteCount)
+                try validate(data)
+                return data
+            }
+        }
+        if let coordinationError { throw coordinationError }
+        guard let result else { throw invalidQueue }
+        return try result.get()
     }
 
     private static func readLimited(_ url: URL, limit: Int) throws -> Data {
