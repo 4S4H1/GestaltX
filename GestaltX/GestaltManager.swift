@@ -402,7 +402,7 @@ final class GestaltManager: ObservableObject {
         guard !key.isEmpty else { throw GestaltFailure("Enter a field key.") }
         guard var doc = working else { throw GestaltFailure("Load a document first.") }
         if draft.originalKey != key && doc.extra[key] != nil { throw GestaltFailure("That key already exists. Edit the existing field instead.") }
-        let value = try draft.kind.parse(draft.text)
+        let value = try draft.parsedValue()
         if let originalKey = draft.originalKey, originalKey != key { doc.set(nil, for: originalKey) }
         doc.set(value, for: key); working = doc
         // Explicit field edits take precedence: discard presets that would overwrite the key.
