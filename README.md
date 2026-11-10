@@ -92,6 +92,6 @@ Back up your data before making changes. Modifying MobileGestalt may cause syste
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date&amp;theme=dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date" />
-    <img alt="GestaltX Star History" src="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date" />
+    <img width="480" alt="GestaltX Star History" src="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date" />
   </picture>
 </a>

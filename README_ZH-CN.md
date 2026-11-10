@@ -92,6 +92,6 @@ GestaltX 跟随 iOS 的语言设置，默认及回退语言为英语。波斯语
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date&amp;theme=dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date" />
-    <img alt="GestaltX Star 增长历史" src="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date" />
+    <img width="480" alt="GestaltX Star 增长历史" src="https://api.star-history.com/svg?repos=huamidev/GestaltX&amp;type=Date" />
   </picture>
 </a>
