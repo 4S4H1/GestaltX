@@ -83,15 +83,16 @@ jobs:
           version="${TAG#v}"
           notes="$RUNNER_TEMP/release-notes.md"
           : > "$notes"
+          printf 'English | [简体中文](https://github.com/huamidev/GestaltX/blob/%s/CHANGELOG_ZH-CN.md)\n\n' "$TAG" > "$notes"
           if [[ -f CHANGELOG.md ]]; then
             awk -v ver="$version" '
               $0 ~ "^## \\[" ver "\\]" { found = 1; next }
               found && /^## \[/ { exit }
-              found { print }
-            ' CHANGELOG.md > "$notes"
+              found { if (!started && $0 == "") next; started = 1; print }
+            ' CHANGELOG.md >> "$notes"
           fi
-          if [[ ! -s "$notes" ]]; then
-            printf 'GestaltX %s\n' "$TAG" > "$notes"
+          if ! grep -q '^### ' "$notes"; then
+            printf 'GestaltX %s\n' "$TAG" >> "$notes"
           fi
           if ! gh release view "$TAG" >/dev/null 2>&1; then
             gh release create "$TAG" --verify-tag \
