@@ -2,6 +2,7 @@
 // Copyright (C) 2026 huamidev
 import Foundation
 import CoreFoundation
+import CryptoKit
 
 struct GestaltFailure: LocalizedError, Sendable {
     let key: String
@@ -269,7 +270,13 @@ struct BackupRecord: Identifiable, Codable, Sendable {
     let source: DocumentSource
     let deviceID: String
     let byteCount: Int
+    let sha256: String?
     var filename: String { id.uuidString + ".plist" }
+
+    init(id: UUID, date: Date, reason: String, source: DocumentSource, deviceID: String, byteCount: Int, sha256: String? = nil) {
+        self.id = id; self.date = date; self.reason = reason; self.source = source
+        self.deviceID = deviceID; self.byteCount = byteCount; self.sha256 = sha256
+    }
 }
 
 actor GestaltFileStore {
@@ -437,7 +444,8 @@ actor GestaltFileStore {
     private func saveBackup(_ data: Data, source: DocumentSource, reason: String) throws -> BackupRecord {
         _ = try GestaltDocument(data: data)
         try FileManager.default.createDirectory(at: backupDirectory, withIntermediateDirectories: true)
-        let record = BackupRecord(id: UUID(), date: Date(), reason: reason, source: source, deviceID: deviceID, byteCount: data.count)
+        let record = BackupRecord(id: UUID(), date: Date(), reason: reason, source: source, deviceID: deviceID,
+                                  byteCount: data.count, sha256: backupDigest(data))
         let url = backupDirectory.appendingPathComponent(record.filename)
         try data.write(to: url, options: .atomic)
         // A failed backup must stop a write. Verify the backup before creating its metadata.
@@ -455,8 +463,18 @@ actor GestaltFileStore {
 
     func backupData(_ record: BackupRecord) throws -> Data {
         let data = try Data(contentsOf: backupDirectory.appendingPathComponent(record.filename))
+        // Older metadata has no digest, but its recorded size is still checked.
+        // New backups also detect replacement by another same-size valid plist.
+        guard data.count == record.byteCount,
+              record.sha256.map({ $0 == backupDigest(data) }) ?? true else {
+            throw GestaltFailure("The backup could not be verified. No system write was started.")
+        }
         _ = try GestaltDocument(data: data)
         return data
+    }
+
+    private func backupDigest(_ data: Data) -> String {
+        SHA256.hash(data: data).map { String(format: "%02x", $0) }.joined()
     }
 
     func deleteBackup(_ record: BackupRecord) throws {
