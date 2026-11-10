@@ -429,7 +429,7 @@ struct FieldsView: View {
                         Button {
                             guard let value = model.preview?.extra[key] else { return }
                             let kind = PlistValueKind.detect(value)
-                            draft = FieldDraft(originalKey: key, key: key, kind: kind, text: kind.text(for: value))
+                            draft = FieldDraft(originalKey: key, key: key, kind: kind, text: kind.text(for: value), originalValue: value)
                         } label: {
                             VStack(alignment: .leading, spacing: 6) {
                                 HStack(alignment: .firstTextBaseline) {

@@ -66,7 +66,10 @@ enum PlistValueKind: String, CaseIterable, Identifiable, Sendable {
     func text(for value: Any) -> String {
         switch self {
         case .boolean: return (value as? NSNumber)?.boolValue == true ? "true" : "false"
-        case .date: return (value as? Date).map { ISO8601DateFormatter().string(from: $0) } ?? ""
+        case .date:
+            let formatter = ISO8601DateFormatter()
+            formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+            return (value as? Date).map { formatter.string(from: $0) } ?? ""
         case .data: return (value as? Data)?.base64EncodedString() ?? ""
         case .array, .dictionary:
             guard let data = try? PropertyListSerialization.data(fromPropertyList: value, format: .xml, options: 0),
