@@ -266,7 +266,10 @@ struct CategoryView: View {
                         Text("iPhone 16 Pro Max · 2868").tag(2868)
                     }
                     .onChange(of: model.subtype) { _, value in if value != 0 { model.choices["dynamicIsland"] = .keep } }
-                }
+                    if let error = model.artworkEditingError {
+                        Text(error.localizedDescription).font(.caption).foregroundStyle(.secondary)
+                    }
+                }.disabled(model.artworkEditingError != nil)
             }
             if category == .device {
                 Section(L("Device Identity")) {
@@ -275,7 +278,10 @@ struct CategoryView: View {
                         TextField(L("Model Name"), text: $model.modelName).autocorrectionDisabled()
                         Text(L("A device restart may be required.")).font(.caption).foregroundStyle(.secondary)
                     }
-                }
+                    if let error = model.artworkEditingError {
+                        Text(error.localizedDescription).font(.caption).foregroundStyle(.secondary)
+                    }
+                }.disabled(model.artworkEditingError != nil)
             }
             if category == .intelligence {
                 Section {
