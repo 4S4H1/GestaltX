@@ -467,6 +467,10 @@ final class GestaltManager: ObservableObject {
     }
     func restore(_ record: BackupRecord) async {
         guard !isBusy, let snapshot else { return }
+        guard changeCount == 0 else {
+            message = L("Save or discard your current changes before opening another plist.")
+            return
+        }
         isBusy = true; defer { isBusy = false }
         do {
             let data = try await files.backupData(record)
@@ -481,6 +485,10 @@ final class GestaltManager: ObservableObject {
     }
     func openBackup(_ record: BackupRecord) async {
         guard !isBusy else { return }
+        guard changeCount == 0 else {
+            message = L("Save or discard your current changes before opening another plist.")
+            return
+        }
         isBusy = true; defer { isBusy = false }
         do {
             let data = try await files.backupData(record)
