@@ -332,20 +332,23 @@ final class GestaltManager: ObservableObject {
         return (bytes, trusted)
     }
 
-    func prepareSharedPlist(_ entry: SharedPlistEntry, from inbox: SharedPlistInbox) async -> PlistImportOffer? {
-        guard !isBusy, changeCount == 0 else { return nil }
+    func prepareSharedPlist(_ entry: SharedPlistEntry, from inbox: SharedPlistInbox) async -> SharedImportPreparation<PlistImportOffer> {
+        guard !isBusy, changeCount == 0 else { return .deferred(nil) }
         isBusy = true
         defer { isBusy = false }
         do {
             let bytes = try inbox.read(entry)
             let (payload, identity) = try await verifyImport(bytes)
             log("[share] Device ownership verified; waiting for import confirmation")
-            return PlistImportOffer(data: payload, name: entry.name, identity: identity, sharedSource: (inbox, entry))
+            return .ready(PlistImportOffer(data: payload, name: entry.name, identity: identity, sharedSource: (inbox, entry)))
         } catch {
             // A lack of device access may be temporary; keep that entry for retry.
-            if (error as? SharedPlistError)?.key != DevicePlistIdentity.unavailable.key { inbox.reject(entry) }
-            failed(error)
-            return nil
+            log("[share] " + error.localizedDescription)
+            if (error as? SharedPlistError)?.key == DevicePlistIdentity.unavailable.key {
+                return .deferred(error.localizedDescription)
+            }
+            inbox.reject(entry)
+            return .rejected(error.localizedDescription)
         }
     }
 
