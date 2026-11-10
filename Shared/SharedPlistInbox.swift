@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 import Foundation
+import Darwin
 
 struct SharedPlistError: LocalizedError {
     let key: String
@@ -48,8 +49,16 @@ struct SharedPlistInbox: Sendable {
     }
 
     private static func readLimited(_ url: URL, limit: Int) throws -> Data {
-        let handle = try FileHandle(forReadingFrom: url)
+        // Open without waiting for a writer and check the opened descriptor, not
+        // just the path: a FIFO must not block the app while scanning its inbox.
+        let descriptor = url.withUnsafeFileSystemRepresentation { path in
+            path.map { open($0, O_RDONLY | O_NONBLOCK | O_NOFOLLOW | O_CLOEXEC) } ?? -1
+        }
+        guard descriptor >= 0 else { throw invalidQueue }
+        let handle = FileHandle(fileDescriptor: descriptor, closeOnDealloc: true)
         defer { try? handle.close() }
+        var info = stat()
+        guard fstat(descriptor, &info) == 0, (info.st_mode & S_IFMT) == S_IFREG else { throw invalidQueue }
         var data = Data()
         while true {
             let part = try handle.read(upToCount: min(64 * 1024, limit - data.count + 1)) ?? Data()
