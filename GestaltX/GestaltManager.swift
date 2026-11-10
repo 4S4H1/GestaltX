@@ -33,6 +33,7 @@ final class GestaltManager: ObservableObject {
     @Published var changesName = false
     @Published var modelName = ""
     @Published var subtype = 0
+    @Published private(set) var wapiChoice: WAPIChoice = .keep
     @Published private(set) var cacheOptionChoice: CacheOptionChoice = .keep
     private let files: GestaltFileStore
     private var exploitLogObserver: NSObjectProtocol?
@@ -137,6 +138,7 @@ final class GestaltManager: ObservableObject {
         snapshot = loaded; working = loaded.document
         choices = [:]; regionID = "keep"; regionCodeID = "keep"; modelID = "keep"; changesName = false; subtype = 0
         cacheOptionChoice = .keep
+        wapiChoice = .keep
         modelName = loaded.document.artwork["ArtworkDeviceProductDescription"] as? String ?? ""
     }
     func clearStaged() {
@@ -155,6 +157,21 @@ final class GestaltManager: ObservableObject {
             try document.setCacheOptions(flags)
             working = document
             cacheOptionChoice = choice
+        } catch { failed(error) }
+    }
+
+    func stageWAPI(_ choice: WAPIChoice) {
+        guard additionalOptionsUnlocked, !isBusy, var document = working, let snapshot else { return }
+        do {
+            let value: Bool
+            switch choice {
+            case .keep: value = try DeviceCacheOptions.wapi(in: snapshot.document)
+            case .disable: value = false
+            case .restoreOriginal: value = try snapshot.originalWAPI()
+            }
+            try document.setWAPI(value)
+            working = document
+            wapiChoice = choice
         } catch { failed(error) }
     }
 
@@ -185,6 +202,8 @@ final class GestaltManager: ObservableObject {
             }
             snapshot = result
             working = before.rebasingPendingEdits(pending, onto: result.document, excluding: [], preservingCacheData: false)
+            if let value = try? DeviceCacheOptions.wapi(in: pending),
+               (try? DeviceCacheOptions.wapi(in: before.document)) != value { try working?.setWAPI(value) }
             cacheOptionChoice = .keep
             log("[restore-option] " + L("Original values restored."))
             await reloadBackups()

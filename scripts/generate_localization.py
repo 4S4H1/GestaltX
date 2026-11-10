@@ -2,6 +2,9 @@ from pathlib import Path
 import json
 ROOT = Path(__file__).resolve().parents[1]
 TRANSLATIONS = '''
+WAPI	WAPI
+Disable WAPI	关闭 WAPI
+Restore Original	恢复原值
 Special Thanks	特别鸣谢
 
 Supported	支持
