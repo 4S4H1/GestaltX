@@ -94,6 +94,7 @@ struct GestaltDocument: @unchecked Sendable {
     private(set) var root: [String: Any]
     var extra: [String: Any] { root["CacheExtra"] as? [String: Any] ?? [:] }
     var artwork: [String: Any] { extra[GestaltKeys.artwork] as? [String: Any] ?? [:] }
+    var canEditArtwork: Bool { extra[GestaltKeys.artwork] == nil || extra[GestaltKeys.artwork] is [String: Any] }
 
     init(data: Data) throws {
         guard let root = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any],
@@ -143,11 +144,14 @@ struct GestaltDocument: @unchecked Sendable {
         applyRegion(code: code, salesSuffix: sales?.info)
     }
 
-    mutating func setArtwork(_ value: Any, for key: String) {
+    @discardableResult
+    mutating func setArtwork(_ value: Any, for key: String) -> Bool {
         // Never replace an existing malformed artwork value and silently lose its data.
+        guard canEditArtwork else { return false }
         var updated = artwork
         updated[key] = value
         set(updated, for: GestaltKeys.artwork)
+        return true
     }
 
     func encoded() throws -> Data {
