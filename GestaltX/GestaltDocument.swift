@@ -464,17 +464,26 @@ actor GestaltFileStore {
         try FileManager.default.removeItem(at: backupDirectory.appendingPathComponent(record.filename))
     }
 
+    private func validateRestoreLayout(_ document: GestaltDocument, against current: GestaltDocument) throws {
+        let failure = GestaltFailure("This plist uses a different system cache layout and cannot be restored.")
+        guard let uuid = document.root["CacheUUID"] as? String, !uuid.isEmpty,
+              current.root["CacheUUID"] as? String == uuid,
+              let data = document.root["CacheData"] as? Data,
+              let currentData = current.root["CacheData"] as? Data, data.count == currentData.count else {
+            throw failure
+        }
+        switch (document.root["CacheVersion"], current.root["CacheVersion"]) {
+        case (nil, nil): break
+        case (let saved?, let live?) where GestaltDocument.valuesEqual(saved, live): break
+        default: throw failure
+        }
+    }
+
     func restoreVerifiedImport(_ imported: DocumentSnapshot, expected: DocumentSnapshot) throws -> DocumentSnapshot {
         guard imported.source == .local, imported.ownershipVerified, expected.source == .device else {
             throw GestaltFailure("This plist's device proof could not be verified on this device.")
         }
-        guard let uuid = imported.document.root["CacheUUID"] as? String, !uuid.isEmpty,
-              expected.document.root["CacheUUID"] as? String == uuid,
-              imported.document.root["CacheVersion"] as? String == expected.document.root["CacheVersion"] as? String,
-              let data = imported.document.root["CacheData"] as? Data,
-              let current = expected.document.root["CacheData"] as? Data, data.count == current.count else {
-            throw GestaltFailure("This plist uses a different system cache layout and cannot be restored.")
-        }
+        try validateRestoreLayout(imported.document, against: expected.document)
         let record = try saveBackup(imported.data, source: .device, reason: "Verified import")
         return try commit(imported.document, expected: expected, restoring: record)
     }
@@ -497,6 +506,9 @@ actor GestaltFileStore {
             guard record.source == .device, record.deviceID == deviceID, edited.matchesIdentity(expected.document) else {
                 throw GestaltFailure("This backup does not belong to this device. Open it as a local file instead.")
             }
+            // Device ownership alone does not make an older OS cache compatible.
+            // Apply the same layout checks to saved backups and verified imports.
+            try validateRestoreLayout(edited, against: expected.document)
         }
         return try withAccess {
             let current = try Data(contentsOf: deviceURL)
